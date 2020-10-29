@@ -36,7 +36,7 @@ print('# Question 3')
 print()
 
 print(
-    '(3.a) Find the titles of all items by a given seller that cast less '
+    '(3.a) Find the titles of all items by a given seller that cost less '
     'than $10'
 )
 
@@ -161,15 +161,16 @@ print('(5.a) List of buyer names with total dollar amount spent')
 
 s = """
 SELECT
-    user.first_name,
-    user.last_name,
-    ROUND(SUM(item.price / 100.0), 2) dollars_spent
-FROM user, buyer, buyer_order, item
+    user.email,
+    ROUND(SUM(item.price) * buyer_order_contents.quantity / 100.0, 2)
+FROM user, buyer, buyer_order, buyer_order_contents, item
 WHERE
     user.email = buyer.email AND
     buyer.email = buyer_order.buyer_email AND
-    buyer_order.id = item.buyer_order_id
-GROUP BY user.email;
+    buyer_order.id = buyer_order_contents.order_id AND
+    buyer_order_contents.serial_no = item.serial_no
+GROUP BY user.email
+
 """
 
 c.execute(s)
@@ -185,24 +186,25 @@ s = """
 SELECT
     user.first_name,
     user.last_name,
-    SUM(item.price)
-FROM user, buyer, buyer_order, item
+    user.email
+FROM user, buyer, buyer_order, buyer_order_contents, item
 WHERE
     user.email = buyer.email AND
     buyer.email = buyer_order.buyer_email AND
-    buyer_order.id = item.buyer_order_id
+    buyer_order.id = buyer_order_contents.order_id AND
+    buyer_order_contents.serial_no = item.serial_no
 GROUP BY user.email
-HAVING SUM(item.price) > (
-    SELECT AVG(`SUM(item.price)`) FROM (
+HAVING SUM(item.price) * buyer_order_contents.quantity > (
+    SELECT AVG(spent) FROM (
         SELECT
-                user.first_name,
-                user.last_name,
-                SUM(item.price)
-        FROM user, buyer, buyer_order, item
+            user.email,
+            SUM(item.price) * buyer_order_contents.quantity as spent
+        FROM user, buyer, buyer_order, buyer_order_contents, item
         WHERE
-                user.email = buyer.email AND
-                buyer.email = buyer_order.buyer_email AND
-                buyer_order.id = item.buyer_order_id
+            user.email = buyer.email AND
+            buyer.email = buyer_order.buyer_email AND
+            buyer_order.id = buyer_order_contents.order_id AND
+            buyer_order_contents.serial_no = item.serial_no
         GROUP BY user.email
     )
 );
