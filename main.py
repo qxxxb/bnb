@@ -249,3 +249,23 @@ ORDER BY accum_price DESC;
 
 c.execute(s)
 pp.pprint(c.fetchall())
+print()
+
+print(
+    '(5.e) Find the seller who sold the most items'
+)
+
+s = """
+SELECT email, MAX(total_quantity_sold) FROM (
+    SELECT seller.email, SUM(quantity_sold) total_quantity_sold
+    FROM seller, store, item
+    WHERE
+        seller.email = store.seller_email AND
+        store.name = item.store_name
+    GROUP BY seller.email
+    ORDER BY SUM(quantity_sold) DESC
+)
+"""
+
+c.execute(s)
+pp.pprint(c.fetchall())
