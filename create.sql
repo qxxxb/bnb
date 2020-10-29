@@ -45,18 +45,27 @@ CREATE TABLE buyer_order (
     FOREIGN KEY(card_no) REFERENCES card(card_no)
 );
 
+CREATE TABLE buyer_order_contents (
+    order_id INTEGER NOT NULL,
+    serial_no VARCHAR(20) NOT NULL,
+    quantity INTEGER NOT NULL DEFAULT 1,
+    PRIMARY KEY(order_id, serial_no),
+    FOREIGN KEY(order_id) REFERENCES buyer_order(id),
+    FOREIGN KEY(serial_no) REFERENCES item(serial_no)
+);
+
 CREATE TABLE item (
     serial_no VARCHAR(20) NOT NULL,
+    quantity INT NOT NULL DEFAULT 1,
+    quantity_sold INT NOT NULL DEFAULT 0,
     title VARCHAR(20) NOT NULL,
     description VARCHAR(200),
     category VARCHAR(20) NOT NULL,
     file_type VARCHAR(20) NOT NULL,
     price INT NOT NULL,
     store_name VARCHAR(20) NOT NULL,
-    buyer_order_id INT,
     PRIMARY KEY(serial_no),
-    FOREIGN KEY(store_name) REFERENCES store(name),
-    FOREIGN KEY(buyer_order_id) REFERENCES buyer_order(id)
+    FOREIGN KEY(store_name) REFERENCES store(name)
 );
 
 CREATE TABLE coupon (

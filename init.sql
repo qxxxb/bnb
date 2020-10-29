@@ -79,6 +79,128 @@ VALUES ('Palace of Yu-Shiang', 'jeng.28@osu.edu');
 INSERT INTO store (name, seller_email)
 VALUES ('Noah''s Doghouse', 'chongsiriwatana.3@osu.edu');
 
+INSERT INTO item (
+    serial_no,
+    quantity,
+    title,
+    description,
+    category,
+    file_type,
+    price,
+    store_name
+) VALUES (
+    'Y2F0c2FyZXNoaXQ=',
+    3,
+    'Cat picture',
+    'A single cat picture. Highest quality guaranteed. Love it or YOUR MONEY BACK.',
+    'pictures',
+    'jpg',
+    1499,
+    'John Doe''s Store'
+);
+
+INSERT INTO item (
+    serial_no,
+    quantity,
+    title,
+    description,
+    category,
+    file_type,
+    price,
+    store_name
+) VALUES (
+    'Y2F0c2FyZWR1bWI=',
+    3,
+    'Another cat picture',
+    'Another one of my cat pictures. Highest quality guaranteed',
+    'pictures',
+    'png',
+    799,
+    'John Doe''s Store'
+);
+
+INSERT INTO item (
+    serial_no,
+    quantity,
+    title,
+    description,
+    category,
+    file_type,
+    price,
+    store_name
+) VALUES (
+    'Y2F0c2FyZXJldGFyZGVk',
+    2,
+    'Dog picture',
+    'A single dog picture. Enjoy.',
+    'pictures',
+    'jpg',
+    899,
+    'John Doe''s Store'
+);
+
+INSERT INTO item (
+    serial_no,
+    quantity,
+    title,
+    description,
+    category,
+    file_type,
+    price,
+    store_name
+) VALUES (
+    'aGFtYnVyZ2Vy',
+    5,
+    'Corndog recipe',
+    'Recipe on how to cook a corndog. Batteries not included',
+    'recipes',
+    'pdf',
+    1500,
+    'Palace of Yu-Shiang'
+);
+
+INSERT INTO item (
+    serial_no,
+    quantity,
+    title,
+    description,
+    category,
+    file_type,
+    price,
+    store_name
+) VALUES (
+    'YmVlc2VjaHVyZ2Vy',
+    5,
+    'Cheeseburger recipe',
+    'Recipe on how to make a beesechurger.',
+    'recipes',
+    'pdf',
+    2000,
+    'Palace of Yu-Shiang'
+);
+
+INSERT INTO item (
+    serial_no,
+    quantity,
+    title,
+    description,
+    category,
+    file_type,
+    price,
+    store_name
+) VALUES (
+    'Y2FsaWNpdW1pc2dvb2Rmb3J5b3VyYm9uZXM=',
+    4,
+    'White Bone',
+    'A white bone. A single white bone. Very clean.',
+    'misc',
+    'bone',
+    9999,
+    'Noah''s Doghouse'
+);
+
+/* 1: Jane Doe orders 'Cat picture' and 'Another cat picture' */
+
 INSERT INTO buyer_order (
     buyer_email,
     delivery_email,
@@ -90,6 +212,20 @@ INSERT INTO buyer_order (
     strftime('%s', '2019-05-01 12:30:56'),
     '4024007117502335'
 );
+
+INSERT INTO buyer_order_contents (order_id, serial_no)
+VALUES (1, 'Y2F0c2FyZXNoaXQ=');
+
+UPDATE item SET quantity_sold = quantity_sold + 1
+WHERE serial_no = 'Y2F0c2FyZXNoaXQ=';
+
+INSERT INTO buyer_order_contents (order_id, serial_no)
+VALUES (1, 'Y2F0c2FyZWR1bWI=');
+
+UPDATE item SET quantity_sold = quantity_sold + 1
+WHERE serial_no = 'Y2F0c2FyZWR1bWI=';
+
+/* 2: Jane Doe orders 'Dog picture' */
 
 INSERT INTO buyer_order (
     buyer_email,
@@ -103,6 +239,14 @@ INSERT INTO buyer_order (
     '5257600929429963'
 );
 
+INSERT INTO buyer_order_contents (order_id, serial_no)
+VALUES (2, 'Y2F0c2FyZXJldGFyZGVk');
+
+UPDATE item SET quantity_sold = quantity_sold + 1
+WHERE serial_no = 'Y2F0c2FyZXJldGFyZGVk';
+
+/* 3: Yu-Shiang Jeng orders 2 'White bone' items */
+
 INSERT INTO buyer_order (
     buyer_email,
     delivery_email,
@@ -115,118 +259,8 @@ INSERT INTO buyer_order (
     '6011296490792965'
 );
 
-INSERT INTO item (
-    serial_no,
-    title,
-    description,
-    category,
-    file_type,
-    price,
-    store_name,
-    buyer_order_id
-) VALUES (
-    'Y2F0c2FyZXNoaXQ=',
-    'Cat picture',
-    'A single cat picture. Highest quality guaranteed. Love it or YOUR MONEY BACK.',
-    'pictures',
-    'jpg',
-    1499,
-    'John Doe''s Store',
-    1
-);
+INSERT INTO buyer_order_contents (order_id, serial_no, quantity)
+VALUES (3, 'Y2FsaWNpdW1pc2dvb2Rmb3J5b3VyYm9uZXM=', 2);
 
-INSERT INTO item (
-    serial_no,
-    title,
-    description,
-    category,
-    file_type,
-    price,
-    store_name,
-    buyer_order_id
-) VALUES (
-    'Y2F0c2FyZWR1bWI=',
-    'Another cat picture',
-    'Another one of my cat pictures. Highest quality guaranteed',
-    'pictures',
-    'png',
-    799,
-    'John Doe''s Store',
-    1
-);
-
-INSERT INTO item (
-    serial_no,
-    title,
-    description,
-    category,
-    file_type,
-    price,
-    store_name
-) VALUES (
-    'Y2F0c2FyZXJldGFyZGVk',
-    'Dog picture',
-    'A single dog picture. Enjoy.',
-    'pictures',
-    'jpg',
-    899,
-    'John Doe''s Store'
-);
-
-INSERT INTO item (
-    serial_no,
-    title,
-    description,
-    category,
-    file_type,
-    price,
-    store_name,
-    buyer_order_id
-) VALUES (
-    'aGFtYnVyZ2Vy',
-    'Corndog recipe',
-    'Recipe on how to cook a corndog. Batteries not included',
-    'recipes',
-    'pdf',
-    1500,
-    'Palace of Yu-Shiang',
-    2
-);
-
-INSERT INTO item (
-    serial_no,
-    title,
-    description,
-    category,
-    file_type,
-    price,
-    store_name
-) VALUES (
-    'YmVlc2VjaHVyZ2Vy',
-    'Cheeseburger recipe',
-    'Recipe on how to make a beesechurger.',
-    'recipes',
-    'pdf',
-    2000,
-    'Palace of Yu-Shiang'
-);
-
-INSERT INTO item (
-    serial_no,
-    title,
-    description,
-    category,
-    file_type,
-    price,
-    store_name,
-    buyer_order_id
-) VALUES (
-    'Y2FsaWNpdW1pc2dvb2Rmb3J5b3VyYm9uZXM=',
-    'White Bone',
-    'A white bone. A single white bone. Very clean.',
-    'misc',
-    'bone',
-    9999,
-    'Noah''s Doghouse',
-    3
-);
+UPDATE item SET quantity_sold = quantity_sold + 2
+WHERE serial_no = 'Y2FsaWNpdW1pc2dvb2Rmb3J5b3VyYm9uZXM=';

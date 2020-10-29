@@ -62,11 +62,12 @@ print(
 buyer = "janedoe@gmail.com"
 s = """
 SELECT item.title, buyer_order.timestamp
-FROM item, buyer_order, buyer
+FROM buyer, buyer_order, buyer_order_contents, item
 WHERE
     buyer.email = ? AND
     buyer.email = buyer_order.buyer_email AND
-    item.buyer_order_id = buyer_order.id;
+    buyer_order.id = buyer_order_contents.order_id AND
+    buyer_order_contents.serial_no = item.serial_no;
 """
 
 c.execute(s, (buyer,))
@@ -78,36 +79,38 @@ print(
 )
 
 s = """
-SELECT user.first_name, user.last_name
+SELECT user.first_name, user.last_name, SUM(item.quantity)
 FROM user, store, item
 WHERE
     user.email = store.seller_email AND
     item.store_name = store.name
 GROUP BY user.email
-HAVING COUNT(item.serial_no) < 5;
+HAVING SUM(item.quantity) < 5;
 """
 
 c.execute(s)
+pp.pprint(c.fetchall())
 print()
 
 print(
-    '(3.d) Give all buyers who purchased an item by a given seller and the'
+    '(3.d) Give all buyers who purchased an item by a given seller and the '
     'names of the items they purchased'
 )
 
 seller = "johndoe@gmail.com"
 s = """
-SELECT buyer.email, item.title
-FROM seller, store, item, buyer_order, buyer
+SELECT buyer_order.buyer_email, item.title
+FROM seller, store, item, buyer_order_contents, buyer_order
 WHERE
     seller.email = ? AND
     seller.email = store.seller_email AND
     store.name = item.store_name AND
-    item.buyer_order_id = buyer_order.id AND
-    buyer_order.buyer_email = buyer.email;
+    item.serial_no = buyer_order_contents.serial_no AND
+        buyer_order_contents.order_id = buyer_order.id;
 """
 
 c.execute(s, (seller,))
+pp.pprint(c.fetchall())
 print()
 
 print(
@@ -116,12 +119,12 @@ print(
 
 buyer = "janedoe@gmail.com"
 s = """
-SELECT COUNT(item.serial_no)
-FROM buyer, buyer_order, item
+SELECT SUM(buyer_order_contents.quantity)
+FROM buyer, buyer_order, buyer_order_contents
 WHERE
     buyer.email = ? AND
     buyer.email = buyer_order.buyer_email AND
-    item.buyer_order_id = buyer_order.id;
+        buyer_order.id = buyer_order_contents.order_id;
 """
 
 c.execute(s, (buyer,))
@@ -133,13 +136,13 @@ print(
 )
 
 s = """
-SELECT email, MAX(`COUNT(item.serial_no)`)
+SELECT email, MAX(`SUM(buyer_order_contents.quantity)`)
 FROM (
-    SELECT buyer.email, COUNT(item.serial_no)
-    FROM buyer, buyer_order, item
+    SELECT buyer.email, SUM(buyer_order_contents.quantity)
+    FROM buyer, buyer_order, buyer_order_contents
     WHERE
         buyer.email = buyer_order.buyer_email AND
-        item.buyer_order_id = buyer_order.id
+        buyer_order.id = buyer_order_contents.order_id
     GROUP BY buyer.email
 );
 """
