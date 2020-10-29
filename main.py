@@ -106,7 +106,7 @@ WHERE
     seller.email = store.seller_email AND
     store.name = item.store_name AND
     item.serial_no = order_contents.serial_no AND
-        order_contents.order_id = 'order'.id;
+    order_contents.order_id = 'order'.id;
 """
 
 c.execute(s, (seller,))
@@ -276,7 +276,8 @@ print(
 )
 
 s = """
-SELECT email, MAX(profit) FROM (
+SELECT email, MAX(profit)
+FROM (
     SELECT seller.email, SUM(quantity_sold) * item.price AS profit
     FROM seller, store, item
     WHERE
@@ -285,6 +286,40 @@ SELECT email, MAX(profit) FROM (
     GROUP BY seller.email
     ORDER BY SUM(quantity_sold) DESC
 );
+"""
+
+c.execute(s)
+pp.pprint(c.fetchall())
+print()
+
+print(
+    '(5.g) List buyer names who have purchased from the most profitable seller'
+)
+
+s = """
+SELECT 'order'.buyer_email, item.title
+FROM
+    (
+        SELECT email, MAX(profit)
+        FROM (
+            SELECT seller.email, SUM(quantity_sold) * item.price AS profit
+            FROM seller, store, item
+            WHERE
+                seller.email = store.seller_email AND
+                store.name = item.store_name
+            GROUP BY seller.email
+            ORDER BY SUM(quantity_sold) DESC
+        )
+    ),
+    store,
+    item,
+    order_contents,
+    'order'
+WHERE
+    email = store.seller_email AND
+    store.name = item.store_name AND
+    item.serial_no = order_contents.serial_no AND
+    order_contents.order_id = 'order'.id
 """
 
 c.execute(s)
