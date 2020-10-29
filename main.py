@@ -215,16 +215,36 @@ pp.pprint(c.fetchall())
 print()
 
 print(
-    '(5.c) List all item names and their total copies sold, sorted from'
-    'dollar amount to lowest'
+    '(5.c) List all item names and their total copies sold, sorted from '
+    'most copies sold to least'
 )
 
 s = """
-SELECT item.title, SUM(quantity_sold), item.price
+SELECT item.title, SUM(quantity_sold)
 FROM item
 LEFT JOIN order_contents ON item.serial_no = order_contents.serial_no
 GROUP BY item.serial_no
-ORDER BY item.price DESC;
+ORDER BY SUM(quantity_sold) DESC;
+"""
+
+c.execute(s)
+pp.pprint(c.fetchall())
+print()
+
+print(
+    '(5.d) Provide a list of item names and associated dollar totals for '
+    'copies sold to all buyers, sorted from highest dollar amount to lowest'
+)
+
+s = """
+SELECT
+    item.title,
+    SUM(quantity_sold),
+    SUM(quantity_sold) * item.price as accum_price
+FROM item
+LEFT JOIN order_contents ON item.serial_no = order_contents.serial_no
+GROUP BY item.serial_no
+ORDER BY accum_price DESC;
 """
 
 c.execute(s)
