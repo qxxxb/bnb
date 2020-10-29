@@ -75,7 +75,7 @@ CREATE TABLE coupon (
     email VARCHAR(20) NOT NULL,
     PRIMARY KEY(id),
     FOREIGN KEY(serial_no) REFERENCES item(serial_no),
-    FOREIGN KEY(email) REFERENCES user(email)
+    FOREIGN KEY(email) REFERENCES buyer(email)
 );
 
 CREATE TABLE item_review (
@@ -93,7 +93,7 @@ CREATE TABLE store_review (
     store_name VARCHAR(20) NOT NULL,
     rating INT NOT NULL,
     review VARCHAR(200),
-    FOREIGN KEY(email) REFERENCES user(email),
+    FOREIGN KEY(email) REFERENCES buyer(email),
     FOREIGN KEY (store_name) REFERENCES store(name)
 );
 
@@ -101,13 +101,13 @@ CREATE TABLE wishlist (
     serial_no VARCHAR(20) NOT NULL,
     email VARCHAR(20) NOT NULL,
     FOREIGN KEY(serial_no) REFERENCES item(serial_no),
-    FOREIGN KEY(email) REFERENCES user(email)
+    FOREIGN KEY(email) REFERENCES buyer(email)
 );
 
 CREATE TABLE buyer_card (
     email VARCHAR(20) NOT NULL,
     card_no VARCHAR(20) NOT NULL,
-    FOREIGN KEY(email) REFERENCES user(email),
+    FOREIGN KEY(email) REFERENCES buyer(email),
     FOREIGN KEY(card_no) REFERENCES card(card_no)
 );
 
