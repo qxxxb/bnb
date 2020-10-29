@@ -297,7 +297,7 @@ print(
 )
 
 s = """
-SELECT 'order'.buyer_email, item.title
+SELECT 'order'.buyer_email
 FROM
     (
         SELECT email, MAX(profit)
@@ -320,6 +320,47 @@ WHERE
     store.name = item.store_name AND
     item.serial_no = order_contents.serial_no AND
     order_contents.order_id = 'order'.id
+"""
+
+c.execute(s)
+pp.pprint(c.fetchall())
+print()
+
+print(
+    '(5.h) List sellers who listed items purchased by the buyers who spent '
+    'above average'
+)
+
+s = """
+SELECT email
+FROM seller, store, item
+WHERE
+    seller.email = store.seller_email AND
+    store.name = item.store_name AND
+    item.serial_no = (
+        SELECT item.serial_no
+        FROM user, buyer, 'order', order_contents, item
+        WHERE
+            user.email = buyer.email AND
+            buyer.email = 'order'.buyer_email AND
+            'order'.id = order_contents.order_id AND
+            order_contents.serial_no = item.serial_no
+        GROUP BY user.email
+        HAVING SUM(item.price) * order_contents.quantity > (
+            SELECT AVG(spent) FROM (
+                SELECT
+                    user.email,
+                    SUM(item.price) * order_contents.quantity as spent
+                FROM user, buyer, 'order', order_contents, item
+                WHERE
+                    user.email = buyer.email AND
+                    buyer.email = 'order'.buyer_email AND
+                    'order'.id = order_contents.order_id AND
+                    order_contents.serial_no = item.serial_no
+                GROUP BY user.email
+            )
+        )
+    )
 """
 
 c.execute(s)
