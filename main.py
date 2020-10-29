@@ -3,7 +3,10 @@ import os
 
 db_name = 'a.db'
 
-os.remove(db_name)
+try:
+    os.remove(db_name)
+except OSError:
+    pass
 
 conn = sqlite3.connect(db_name)
 c = conn.cursor()
