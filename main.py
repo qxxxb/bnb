@@ -92,14 +92,14 @@ c.execute(s, (buyer,))
 print(c.fetchall())
 
 s = """
-SELECT buyer.email, MAX(`COUNT(item.serial_no)`)
-FROM buyer, (
-    SELECT COUNT(item.serial_no)
-        FROM buyer, buyer_order, item
-        WHERE
-            buyer.email = buyer_order.buyer_email AND
-            item.buyer_order_id = buyer_order.id
-        GROUP BY buyer.email
+SELECT email, MAX(`COUNT(item.serial_no)`)
+FROM (
+    SELECT buyer.email, COUNT(item.serial_no)
+    FROM buyer, buyer_order, item
+    WHERE
+        buyer.email = buyer_order.buyer_email AND
+        item.buyer_order_id = buyer_order.id
+    GROUP BY buyer.email
 );
 """
 
