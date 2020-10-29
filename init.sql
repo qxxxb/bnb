@@ -16,6 +16,39 @@ VALUES ('chongsiriwatana.3@osu.edu', 'Noah', 'Chongsiriwatana', 6, 1);
 INSERT INTO user (email, first_name, last_name, karma_points)
 VALUES ('coyle.128@osu.edu', 'Andrew', 'Coyle', 9);
 
+INSERT INTO card (
+    card_no,
+    pin,
+    type,
+    expire_month,
+    expire_year
+) VALUES ('4024007117502335', 356, 'VISA', 09, 2021);
+
+INSERT INTO card (
+    card_no,
+    pin,
+    type,
+    expire_month,
+    expire_year
+) VALUES ('5257600929429963', 121, 'Mastercard', 02, 2022);
+
+INSERT INTO card (
+    card_no,
+    pin,
+    type,
+    expire_month,
+    expire_year
+) VALUES ('6011296490792965', 910, 'Discover', 12, 2020);
+
+INSERT INTO buyer_card (email, card_no)
+VALUES ('janedoe@gmail.com', '4024007117502335');
+
+INSERT INTO buyer_card (email, card_no)
+VALUES ('janedoe@gmail.com', '5257600929429963');
+
+INSERT INTO buyer_card (email, card_no)
+VALUES ('jeng.28@osu.edu', '6011296490792965');
+
 INSERT INTO seller (email)
 VALUES ('johndoe@gmail.com');
 
@@ -46,22 +79,40 @@ VALUES ('Palace of Yu-Shiang', 'jeng.28@osu.edu');
 INSERT INTO store (name, seller_email)
 VALUES ('Noah''s Doghouse', 'chongsiriwatana.3@osu.edu');
 
-INSERT INTO item (
-    serial_no,
-    title,
-    description,
-    category,
-    file_type,
-    price,
-    store_name
+INSERT INTO buyer_order (
+    buyer_email,
+    delivery_email,
+    timestamp,
+    card_no
 ) VALUES (
-    'Y2F0c2FyZXNoaXQ=',
-    'Cat picture',
-    'A single cat picture. Highest quality guaranteed. Love it or YOUR MONEY BACK.',
-    'pictures',
-    'jpg',
-    1499,
-    'John Doe''s Store'
+    'janedoe@gmail.com',
+    'grandmadoe@gmail.com',
+    strftime('%s', '2019-05-01 12:30:56'),
+    '4024007117502335'
+);
+
+INSERT INTO buyer_order (
+    buyer_email,
+    delivery_email,
+    timestamp,
+    card_no
+) VALUES (
+    'janedoe@gmail.com',
+    'juniordoe@gmail.com',
+    strftime('%s', '2019-12-24 00:10:22'),
+    '5257600929429963'
+);
+
+INSERT INTO buyer_order (
+    buyer_email,
+    delivery_email,
+    timestamp,
+    card_no
+) VALUES (
+    'jeng.28@osu.edu',
+    'coyle.128@osu.edu',
+    strftime('%s', '2020-10-28 00:10:23'),
+    '6011296490792965'
 );
 
 INSERT INTO item (
@@ -71,7 +122,28 @@ INSERT INTO item (
     category,
     file_type,
     price,
-    store_name
+    store_name,
+    buyer_order_id
+) VALUES (
+    'Y2F0c2FyZXNoaXQ=',
+    'Cat picture',
+    'A single cat picture. Highest quality guaranteed. Love it or YOUR MONEY BACK.',
+    'pictures',
+    'jpg',
+    1499,
+    'John Doe''s Store',
+    0
+);
+
+INSERT INTO item (
+    serial_no,
+    title,
+    description,
+    category,
+    file_type,
+    price,
+    store_name,
+    buyer_order_id
 ) VALUES (
     'Y2F0c2FyZWR1bWI=',
     'Another cat picture',
@@ -79,7 +151,8 @@ INSERT INTO item (
     'pictures',
     'png',
     799,
-    'John Doe''s Store'
+    'John Doe''s Store',
+    1
 );
 
 INSERT INTO item (
@@ -107,7 +180,8 @@ INSERT INTO item (
     category,
     file_type,
     price,
-    store_name
+    store_name,
+    buyer_order_id
 ) VALUES (
     'aGFtYnVyZ2Vy',
     'Corndog recipe',
@@ -115,7 +189,8 @@ INSERT INTO item (
     'recipes',
     'pdf',
     1500,
-    'Palace of Yu-Shiang'
+    'Palace of Yu-Shiang',
+    2
 );
 
 INSERT INTO item (
@@ -143,7 +218,8 @@ INSERT INTO item (
     category,
     file_type,
     price,
-    store_name
+    store_name,
+    buyer_order_id
 ) VALUES (
     'Y2FsaWNpdW1pc2dvb2Rmb3J5b3VyYm9uZXM=',
     'White Bone',
@@ -151,5 +227,6 @@ INSERT INTO item (
     'misc',
     'bone',
     9999,
-    'Noah''s Doghouse'
+    'Noah''s Doghouse',
+    3
 );

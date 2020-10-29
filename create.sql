@@ -11,8 +11,8 @@ CREATE TABLE card (
     card_no VARCHAR(20) NOT NULL,
     pin INT NOT NULL,
     type VARCHAR(10) NOT NULL,
-    expire_year INT NOT NULL,
     expire_month INT NOT NULL,
+    expire_year INT NOT NULL,
     PRIMARY KEY(card_no)
 );
 
@@ -33,6 +33,16 @@ CREATE TABLE store (
     seller_email VARCHAR(20) NOT NULL,
     PRIMARY KEY(name),
     FOREIGN KEY(seller_email) REFERENCES seller(email)
+);
+
+CREATE TABLE buyer_order (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    buyer_email VARCHAR(20) NOT NULL,
+    delivery_email VARCHAR(20) NOT NULL,
+    timestamp TIMESTAMP NOT NULL,
+    card_no VARCHAR(20) NOT NULL,
+    FOREIGN KEY(buyer_email) REFERENCES buyer(email),
+    FOREIGN KEY(card_no) REFERENCES card(card_no)
 );
 
 CREATE TABLE item (
@@ -57,17 +67,6 @@ CREATE TABLE coupon (
     PRIMARY KEY(id),
     FOREIGN KEY(serial_no) REFERENCES item(serial_no),
     FOREIGN KEY(email) REFERENCES user(email)
-);
-
-CREATE TABLE buyer_order (
-    id INT NOT NULL,
-    buyer_email VARCHAR(20) NOT NULL,
-    delivery_email VARCHAR(20) NOT NULL,
-    timestamp TIMESTAMP NOT NULL,
-    card_no VARCHAR(20) NOT NULL,
-    PRIMARY KEY(id),
-    FOREIGN KEY(buyer_email) REFERENCES buyer(email),
-    FOREIGN KEY(card_no) REFERENCES card(card_no)
 );
 
 CREATE TABLE store_review (
