@@ -61,13 +61,13 @@ print(
 
 buyer = "janedoe@gmail.com"
 s = """
-SELECT item.title, buyer_order.timestamp
-FROM buyer, buyer_order, buyer_order_contents, item
+SELECT item.title, 'order'.timestamp
+FROM buyer, 'order', order_contents, item
 WHERE
     buyer.email = ? AND
-    buyer.email = buyer_order.buyer_email AND
-    buyer_order.id = buyer_order_contents.order_id AND
-    buyer_order_contents.serial_no = item.serial_no;
+    buyer.email = 'order'.buyer_email AND
+    'order'.id = order_contents.order_id AND
+    order_contents.serial_no = item.serial_no;
 """
 
 c.execute(s, (buyer,))
@@ -99,14 +99,14 @@ print(
 
 seller = "johndoe@gmail.com"
 s = """
-SELECT buyer_order.buyer_email, item.title
-FROM seller, store, item, buyer_order_contents, buyer_order
+SELECT 'order'.buyer_email, item.title
+FROM seller, store, item, order_contents, 'order'
 WHERE
     seller.email = ? AND
     seller.email = store.seller_email AND
     store.name = item.store_name AND
-    item.serial_no = buyer_order_contents.serial_no AND
-        buyer_order_contents.order_id = buyer_order.id;
+    item.serial_no = order_contents.serial_no AND
+        order_contents.order_id = 'order'.id;
 """
 
 c.execute(s, (seller,))
@@ -119,12 +119,12 @@ print(
 
 buyer = "janedoe@gmail.com"
 s = """
-SELECT SUM(buyer_order_contents.quantity)
-FROM buyer, buyer_order, buyer_order_contents
+SELECT SUM(order_contents.quantity)
+FROM buyer, 'order', order_contents
 WHERE
     buyer.email = ? AND
-    buyer.email = buyer_order.buyer_email AND
-        buyer_order.id = buyer_order_contents.order_id;
+    buyer.email = 'order'.buyer_email AND
+        'order'.id = order_contents.order_id;
 """
 
 c.execute(s, (buyer,))
@@ -136,13 +136,13 @@ print(
 )
 
 s = """
-SELECT email, MAX(`SUM(buyer_order_contents.quantity)`)
+SELECT email, MAX('SUM(order_contents.quantity)')
 FROM (
-    SELECT buyer.email, SUM(buyer_order_contents.quantity)
-    FROM buyer, buyer_order, buyer_order_contents
+    SELECT buyer.email, SUM(order_contents.quantity)
+    FROM buyer, 'order', order_contents
     WHERE
-        buyer.email = buyer_order.buyer_email AND
-        buyer_order.id = buyer_order_contents.order_id
+        buyer.email = 'order'.buyer_email AND
+        'order'.id = order_contents.order_id
     GROUP BY buyer.email
 );
 """
@@ -162,13 +162,13 @@ print('(5.a) List of buyer names with total dollar amount spent')
 s = """
 SELECT
     user.email,
-    ROUND(SUM(item.price) * buyer_order_contents.quantity / 100.0, 2)
-FROM user, buyer, buyer_order, buyer_order_contents, item
+    ROUND(SUM(item.price) * order_contents.quantity / 100.0, 2)
+FROM user, buyer, 'order', order_contents, item
 WHERE
     user.email = buyer.email AND
-    buyer.email = buyer_order.buyer_email AND
-    buyer_order.id = buyer_order_contents.order_id AND
-    buyer_order_contents.serial_no = item.serial_no
+    buyer.email = 'order'.buyer_email AND
+    'order'.id = order_contents.order_id AND
+    order_contents.serial_no = item.serial_no
 GROUP BY user.email
 
 """
@@ -187,24 +187,24 @@ SELECT
     user.first_name,
     user.last_name,
     user.email
-FROM user, buyer, buyer_order, buyer_order_contents, item
+FROM user, buyer, 'order', order_contents, item
 WHERE
     user.email = buyer.email AND
-    buyer.email = buyer_order.buyer_email AND
-    buyer_order.id = buyer_order_contents.order_id AND
-    buyer_order_contents.serial_no = item.serial_no
+    buyer.email = 'order'.buyer_email AND
+    'order'.id = order_contents.order_id AND
+    order_contents.serial_no = item.serial_no
 GROUP BY user.email
-HAVING SUM(item.price) * buyer_order_contents.quantity > (
+HAVING SUM(item.price) * order_contents.quantity > (
     SELECT AVG(spent) FROM (
         SELECT
             user.email,
-            SUM(item.price) * buyer_order_contents.quantity as spent
-        FROM user, buyer, buyer_order, buyer_order_contents, item
+            SUM(item.price) * order_contents.quantity as spent
+        FROM user, buyer, 'order', order_contents, item
         WHERE
             user.email = buyer.email AND
-            buyer.email = buyer_order.buyer_email AND
-            buyer_order.id = buyer_order_contents.order_id AND
-            buyer_order_contents.serial_no = item.serial_no
+            buyer.email = 'order'.buyer_email AND
+            'order'.id = order_contents.order_id AND
+            order_contents.serial_no = item.serial_no
         GROUP BY user.email
     )
 );

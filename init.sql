@@ -201,7 +201,7 @@ INSERT INTO item (
 
 /* 1: Jane Doe orders 'Cat picture' and 'Another cat picture' */
 
-INSERT INTO buyer_order (
+INSERT INTO 'order' (
     buyer_email,
     delivery_email,
     timestamp,
@@ -213,13 +213,13 @@ INSERT INTO buyer_order (
     '4024007117502335'
 );
 
-INSERT INTO buyer_order_contents (order_id, serial_no)
+INSERT INTO order_contents (order_id, serial_no)
 VALUES (1, 'Y2F0c2FyZXNoaXQ=');
 
 UPDATE item SET quantity_sold = quantity_sold + 1
 WHERE serial_no = 'Y2F0c2FyZXNoaXQ=';
 
-INSERT INTO buyer_order_contents (order_id, serial_no)
+INSERT INTO order_contents (order_id, serial_no)
 VALUES (1, 'Y2F0c2FyZWR1bWI=');
 
 UPDATE item SET quantity_sold = quantity_sold + 1
@@ -227,7 +227,7 @@ WHERE serial_no = 'Y2F0c2FyZWR1bWI=';
 
 /* 2: Jane Doe orders 'Dog picture' */
 
-INSERT INTO buyer_order (
+INSERT INTO 'order' (
     buyer_email,
     delivery_email,
     timestamp,
@@ -239,7 +239,7 @@ INSERT INTO buyer_order (
     '5257600929429963'
 );
 
-INSERT INTO buyer_order_contents (order_id, serial_no)
+INSERT INTO order_contents (order_id, serial_no)
 VALUES (2, 'Y2F0c2FyZXJldGFyZGVk');
 
 UPDATE item SET quantity_sold = quantity_sold + 1
@@ -247,7 +247,7 @@ WHERE serial_no = 'Y2F0c2FyZXJldGFyZGVk';
 
 /* 3: Yu-Shiang Jeng orders 2 'White bone' items */
 
-INSERT INTO buyer_order (
+INSERT INTO 'order' (
     buyer_email,
     delivery_email,
     timestamp,
@@ -259,7 +259,7 @@ INSERT INTO buyer_order (
     '6011296490792965'
 );
 
-INSERT INTO buyer_order_contents (order_id, serial_no, quantity)
+INSERT INTO order_contents (order_id, serial_no, quantity)
 VALUES (3, 'Y2FsaWNpdW1pc2dvb2Rmb3J5b3VyYm9uZXM=', 2);
 
 UPDATE item SET quantity_sold = quantity_sold + 2

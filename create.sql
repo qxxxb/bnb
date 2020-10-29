@@ -35,7 +35,7 @@ CREATE TABLE store (
     FOREIGN KEY(seller_email) REFERENCES seller(email)
 );
 
-CREATE TABLE buyer_order (
+CREATE TABLE 'order' (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     buyer_email VARCHAR(20) NOT NULL,
     delivery_email VARCHAR(20) NOT NULL,
@@ -45,12 +45,12 @@ CREATE TABLE buyer_order (
     FOREIGN KEY(card_no) REFERENCES card(card_no)
 );
 
-CREATE TABLE buyer_order_contents (
+CREATE TABLE order_contents (
     order_id INTEGER NOT NULL,
     serial_no VARCHAR(20) NOT NULL,
     quantity INTEGER NOT NULL DEFAULT 1,
     PRIMARY KEY(order_id, serial_no),
-    FOREIGN KEY(order_id) REFERENCES buyer_order(id),
+    FOREIGN KEY(order_id) REFERENCES 'order'(id),
     FOREIGN KEY(serial_no) REFERENCES item(serial_no)
 );
 
