@@ -220,8 +220,12 @@ print(
 )
 
 s = """
-TODO
+SELECT item.title, SUM(quantity_sold), item.price
+FROM item
+LEFT JOIN order_contents ON item.serial_no = order_contents.serial_no
+GROUP BY item.serial_no
+ORDER BY item.price DESC;
 """
 
-# c.execute(s)
-# pp.pprint(c.fetchall())
+c.execute(s)
+pp.pprint(c.fetchall())
