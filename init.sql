@@ -264,3 +264,47 @@ VALUES (3, 'Y2FsaWNpdW1pc2dvb2Rmb3J5b3VyYm9uZXM=', 2);
 
 UPDATE item SET quantity_sold = quantity_sold + 2
 WHERE serial_no = 'Y2FsaWNpdW1pc2dvb2Rmb3J5b3VyYm9uZXM=';
+
+/* --- */
+
+INSERT INTO store_review (
+    store_name,
+    reviewer_email,
+    rating,
+    review
+) VALUES (
+    'Palace of Yu-Shiang',
+    'chongsiriwatana.3@osu.edu',
+    5,
+    'I love Yu-Shiang''s palace. 10/10 would go again.'
+);
+
+INSERT INTO store_review (
+    store_name,
+    reviewer_email,
+    rating,
+    review
+) VALUES (
+    'Palace of Yu-Shiang',
+    'janedoe@gmail.com',
+    2,
+    'I hate Yu-Shiang. Do not go.'
+);
+
+INSERT INTO wishlist (serial_no, email)
+VALUES ('aGFtYnVyZ2Vy', 'chongsiriwatana.3@osu.edu');
+
+INSERT INTO wishlist (serial_no, email)
+VALUES ('YmVlc2VjaHVyZ2Vy', 'chongsiriwatana.3@osu.edu');
+
+INSERT INTO store_review (
+    store_name,
+    reviewer_email,
+    rating,
+    review
+) VALUES (
+    'Palace of Yu-Shiang',
+    'janedoe@gmail.com',
+    2,
+    'I hate Yu-Shiang. Do not go.'
+);

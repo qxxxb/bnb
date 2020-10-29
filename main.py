@@ -150,7 +150,55 @@ FROM (
 c.execute(s)
 pp.pprint(c.fetchall())
 
-# TODO: Q4
+# Q4
+print()
+print('# Question 4')
+print()
+
+print('(4.a) List stores with an average rating above 2')
+
+s = """
+SELECT store.name, AVG(rating)
+FROM store, store_review
+WHERE store.name = store_review.store_name
+GROUP BY store.name
+HAVING AVG(rating) > 2
+"""
+
+c.execute(s)
+pp.pprint(c.fetchall())
+print()
+
+print('(4.b) List items and prices of a user\'s wishlist')
+
+buyer = 'chongsiriwatana.3@osu.edu'
+s = """
+SELECT item.title, item.price
+FROM user, wishlist, item
+WHERE
+    user.email = ? AND
+    user.email = wishlist.email AND
+    wishlist.serial_no = item.serial_no;
+"""
+
+c.execute(s, (buyer, ))
+pp.pprint(c.fetchall())
+print()
+
+print('(4.c) Get the sum of item prices on all wishlists, ordered by price')
+
+s = """
+SELECT user.email, SUM(item.price)
+FROM user, wishlist, item
+WHERE
+    user.email = wishlist.email AND
+    wishlist.serial_no = item.serial_no
+GROUP BY user.email
+ORDER BY SUM(item.price) ASC
+"""
+
+c.execute(s)
+pp.pprint(c.fetchall())
 
 # Q5
 print()

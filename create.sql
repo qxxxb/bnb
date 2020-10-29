@@ -89,11 +89,11 @@ CREATE TABLE item_review (
 );
 
 CREATE TABLE store_review (
-    email VARCHAR(20) NOT NULL,
     store_name VARCHAR(20) NOT NULL,
+    reviewer_email VARCHAR(20) NOT NULL,
     rating INT NOT NULL,
     review VARCHAR(200),
-    FOREIGN KEY(email) REFERENCES buyer(email),
+    FOREIGN KEY(reviewer_email) REFERENCES buyer(email),
     FOREIGN KEY (store_name) REFERENCES store(name)
 );
 
