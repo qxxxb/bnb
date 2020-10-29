@@ -63,13 +63,20 @@ HAVING COUNT(item.serial_no) < 5;
 c.execute(s)
 print(c.fetchall())
 
+seller = "johndoe@gmail.com"
+s = """
+SELECT buyer.email, item.title
+FROM seller, store, item, buyer_order, buyer
+WHERE
+    seller.email = ? AND
+    seller.email = store.seller_email AND
+    store.name = item.store_name AND
+    item.buyer_order_id = buyer_order.id AND
+    buyer_order.buyer_email = buyer.email;
 """
-SELECT O.Email, I.File_Name
-FROM Order_Contents AS OC, Order AS O, User AS U, IP_Item AS I
-WHERE I.Email = 'DesignatedSeller@cp03.com'
-    AND OC.Serial_No = I.Serial_No
-    AND OC.Order_No = O.Order_No
-"""
+
+c.execute(s, (seller,))
+print(c.fetchall())
 
 """
 SELECT COUNT(I.Serial_No)

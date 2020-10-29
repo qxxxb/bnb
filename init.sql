@@ -132,7 +132,7 @@ INSERT INTO item (
     'jpg',
     1499,
     'John Doe''s Store',
-    0
+    1
 );
 
 INSERT INTO item (
