@@ -91,18 +91,17 @@ WHERE
 c.execute(s, (buyer,))
 print(c.fetchall())
 
+s = """
+SELECT buyer.email, MAX(`COUNT(item.serial_no)`)
+FROM buyer, (
+    SELECT COUNT(item.serial_no)
+        FROM buyer, buyer_order, item
+        WHERE
+            buyer.email = buyer_order.buyer_email AND
+            item.buyer_order_id = buyer_order.id
+        GROUP BY buyer.email
+);
+"""
 
-"""
-SELECT U.Email, COUNT(OC.Serial_No)
-FROM User AS U, Order AS O, Order_Contents AS OC
-WHERE U.Email = O.Email
-    AND O.Order_No = OC.Order_No
-GROUP BY U.Email
-HAVING COUNT(OC.Serial_No) =
-(SELECT MAX(count)
-FROM (SELECT COUNT(OC.Serial_No) AS count
-FROM User AS U, Order AS O, Order_Contents AS OC
-WHERE U.Email = O.Email
-AND O.Order_No = OC.Order_No
-GROUP BY U.Email
-"""
+c.execute(s)
+print(c.fetchall())
