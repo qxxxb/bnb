@@ -169,8 +169,7 @@ WHERE
     buyer.email = 'order'.buyer_email AND
     'order'.id = order_contents.order_id AND
     order_contents.serial_no = item.serial_no
-GROUP BY user.email
-
+GROUP BY user.email;
 """
 
 c.execute(s)
