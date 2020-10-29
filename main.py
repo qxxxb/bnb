@@ -78,13 +78,18 @@ WHERE
 c.execute(s, (seller,))
 print(c.fetchall())
 
+buyer = "janedoe@gmail.com"
+s = """
+SELECT COUNT(item.serial_no)
+FROM buyer, buyer_order, item
+WHERE
+    buyer.email = ? AND
+    buyer.email = buyer_order.buyer_email AND
+    item.buyer_order_id = buyer_order.id;
 """
-SELECT COUNT(I.Serial_No)
-FROM IP_Item AS I, User AS U, Order AS O, Order_Contents AS OC
-WHERE I.Serial_No = OC.Serial_No
-    AND OC.Order_No = O.Order_No
-    AND O.Email = 'DesignatedBuyer@cp03.com'
-"""
+
+c.execute(s, (buyer,))
+print(c.fetchall())
 
 
 """
