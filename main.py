@@ -257,14 +257,34 @@ print(
 
 s = """
 SELECT email, MAX(total_quantity_sold) FROM (
-    SELECT seller.email, SUM(quantity_sold) total_quantity_sold
+    SELECT seller.email, SUM(quantity_sold) AS total_quantity_sold
     FROM seller, store, item
     WHERE
         seller.email = store.seller_email AND
         store.name = item.store_name
     GROUP BY seller.email
     ORDER BY SUM(quantity_sold) DESC
+);
+"""
+
+c.execute(s)
+pp.pprint(c.fetchall())
+print()
+
+print(
+    '(5.f) Find the most profitable seller'
 )
+
+s = """
+SELECT email, MAX(profit) FROM (
+    SELECT seller.email, SUM(quantity_sold) * item.price AS profit
+    FROM seller, store, item
+    WHERE
+        seller.email = store.seller_email AND
+        store.name = item.store_name
+    GROUP BY seller.email
+    ORDER BY SUM(quantity_sold) DESC
+);
 """
 
 c.execute(s)
