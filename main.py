@@ -50,15 +50,18 @@ WHERE
 c.execute(s, (buyer,))
 print(c.fetchall())
 
+s = """
+SELECT user.first_name, user.last_name
+FROM user, store, item
+WHERE
+    user.email = store.seller_email AND
+    item.store_name = store.name
+GROUP BY user.email
+HAVING COUNT(item.serial_no) < 5;
 """
-SELECT User.First_Name, User.Last_Name
-FROM User, Virtual_Store, IP_Item
-WHERE  User.Email = Virtual_Store.Email
-    AND Virtual_Store.Email = IP_Item.Email
-    AND Virtual_Store.Store_Name = IP_Item.Store_Name
-GROUP BY User.Email
-HAVING COUNT(IP_Item) < 5;
-"""
+
+c.execute(s)
+print(c.fetchall())
 
 """
 SELECT O.Email, I.File_Name
