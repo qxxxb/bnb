@@ -69,6 +69,16 @@ CREATE TABLE coupon (
     FOREIGN KEY(email) REFERENCES user(email)
 );
 
+CREATE TABLE item_review (
+    serial_no VARCHAR(20) NOT NULL,
+    reviewer_email VARCHAR(20) NOT NULL,
+    rating INT NOT NULL,
+    review VARCHAR(200),
+    PRIMARY KEY(serial_no, reviewer_email)
+    FOREIGN KEY(serial_no) REFERENCES item(serial_no),
+    FOREIGN KEY(reviewer_email) REFERENCES buyer(email)
+);
+
 CREATE TABLE store_review (
     email VARCHAR(20) NOT NULL,
     store_name VARCHAR(20) NOT NULL,

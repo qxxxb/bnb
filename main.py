@@ -171,3 +171,52 @@ GROUP BY user.email;
 
 c.execute(s)
 pp.pprint(c.fetchall())
+print()
+
+print(
+    '(5.b) List buyers names and emails who have spent more than the '
+    'average buyer'
+)
+
+s = """
+SELECT
+    user.first_name,
+    user.last_name,
+    SUM(item.price)
+FROM user, buyer, buyer_order, item
+WHERE
+    user.email = buyer.email AND
+    buyer.email = buyer_order.buyer_email AND
+    buyer_order.id = item.buyer_order_id
+GROUP BY user.email
+HAVING SUM(item.price) > (
+    SELECT AVG(`SUM(item.price)`) FROM (
+        SELECT
+                user.first_name,
+                user.last_name,
+                SUM(item.price)
+        FROM user, buyer, buyer_order, item
+        WHERE
+                user.email = buyer.email AND
+                buyer.email = buyer_order.buyer_email AND
+                buyer_order.id = item.buyer_order_id
+        GROUP BY user.email
+    )
+);
+"""
+
+c.execute(s)
+pp.pprint(c.fetchall())
+print()
+
+print(
+    '(5.c) List all item names and their total copies sold, sorted from'
+    'dollar amount to lowest'
+)
+
+s = """
+TODO
+"""
+
+# c.execute(s)
+# pp.pprint(c.fetchall())
