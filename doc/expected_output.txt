@@ -1,0 +1,75 @@
+# Question 2
+
+Created database
+Initialized database with sample data
+
+# Question 3
+
+(3.a) Find the titles of all items by a given seller that cost less than $10
+[('Another cat picture',), ('Dog picture',)]
+
+(3.b) Give all titles and their dates of purchase made by a given buyer
+[   ('Another cat picture', 1556713856),
+    ('Cat picture', 1556713856),
+    ('Dog picture', 1577146222)]
+
+(3.c) Find seller names with less than 5 items for sale
+[('Noah', 'Chongsiriwatana', 4)]
+
+(3.d) Give all buyers who purchased an item by a given seller and the names of the items they purchased
+[   ('janedoe@gmail.com', 'Another cat picture'),
+    ('janedoe@gmail.com', 'Cat picture'),
+    ('janedoe@gmail.com', 'Dog picture')]
+
+(3.e) Find the total number of items purchased by a given buyer
+[(3,)]
+
+(3.f) Find the buyer who purchased the most number of items
+[('janedoe@gmail.com', 'SUM(order_contents.quantity)')]
+
+# Question 4
+
+(4.a) List stores with an average rating above 2
+[('Palace of Yu-Shiang', 3.0)]
+
+(4.b) List items and prices of a user's wishlist
+[('Corndog recipe', 1500), ('Cheeseburger recipe', 2000)]
+
+(4.c) Get the sum of item prices on all wishlists, ordered by price
+[('chongsiriwatana.3@osu.edu', 3500)]
+
+# Question 5
+
+(5.a) List of buyer names with total dollar amount spent
+[('janedoe@gmail.com', 31.97), ('jeng.28@osu.edu', 199.98)]
+
+(5.b) List buyers names and emails who have spent more than the average buyer
+[('Yu-Shiang', 'Jeng', 'jeng.28@osu.edu')]
+
+(5.c) List all item names and their total copies sold, sorted from most copies sold to least
+[   ('White Bone', 2),
+    ('Another cat picture', 1),
+    ('Dog picture', 1),
+    ('Cat picture', 1),
+    ('Cheeseburger recipe', 0),
+    ('Corndog recipe', 0)]
+
+(5.d) Provide a list of item names and associated dollar totals for copies sold to all buyers, sorted from highest dollar amount to lowest
+[   ('White Bone', 2, 19998),
+    ('Cat picture', 1, 1499),
+    ('Dog picture', 1, 899),
+    ('Another cat picture', 1, 799),
+    ('Cheeseburger recipe', 0, 0),
+    ('Corndog recipe', 0, 0)]
+
+(5.e) Find the seller who sold the most items
+[('johndoe@gmail.com', 3)]
+
+(5.f) Find the most profitable seller
+[('chongsiriwatana.3@osu.edu', 19998)]
+
+(5.g) List buyer names who have purchased from the most profitable seller
+[('jeng.28@osu.edu',)]
+
+(5.h) List sellers who listed items purchased by the buyers who spent above average
+[('chongsiriwatana.3@osu.edu',)]
