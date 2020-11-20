@@ -1,6 +1,21 @@
 # CSE 3241 Project
 
-- A pre-populated database can be found in [a.db](a.db).
-- The script for populating the database can be found in [init.sql](init.sql)
-- The script for running queries can be found in [main.py](main.py)
-- Python 3 is required to run these scripts
+## Dependencies
+
+Install Python 3
+```
+pip3 install Faker
+```
+
+## Usage
+
+To execute the queries:
+```
+python3 main.py
+```
+
+The [a.db](a.db) file is already pre-populated with data.
+If you want to re-populate the database then run:
+```
+python3 init.py
+```
