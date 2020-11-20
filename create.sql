@@ -69,11 +69,10 @@ CREATE TABLE item (
 );
 
 CREATE TABLE coupon (
-    id INT NOT NULL,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     discount INT NOT NULL,
     serial_no VARCHAR(20) NOT NULL,
     email VARCHAR(20) NOT NULL,
-    PRIMARY KEY(id),
     FOREIGN KEY(serial_no) REFERENCES item(serial_no),
     FOREIGN KEY(email) REFERENCES buyer(email)
 );

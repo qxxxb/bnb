@@ -1,36 +1,15 @@
 import sqlite3
 import pprint
-import os
 
 pp = pprint.PrettyPrinter(indent=4)
 
 db_name = 'a.db'
 
-try:
-    os.remove(db_name)
-except OSError:
-    pass
-
 conn = sqlite3.connect(db_name)
 c = conn.cursor()
 
-# Q2
-
-print('# Question 2')
-print()
-
-with open('create.sql', 'r') as f:
-    s = f.read()
-    c.executescript(s)
-    print('Created database')
-
-with open('init.sql', 'r') as f:
-    s = f.read()
-    c.executescript(s)
-    print('Initialized database with sample data')
-
-
 # Q3
+# TODO: Update these queries
 print()
 print('# Question 3')
 print()
