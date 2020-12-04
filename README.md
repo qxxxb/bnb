@@ -38,7 +38,8 @@ these SQL scripts:
 ### Method 1 (Recommended)
 
 To execute queries from the CPs as well as various insert/delete queries, run
-[main.py](main.py):
+[main.py](main.py). Note that this will call `init.py` at the start of the
+script:
 ```
 python3 main.py
 ```
