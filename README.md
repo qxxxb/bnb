@@ -2,14 +2,15 @@
 
 ## Dependencies
 
-Install Python 3
+- Install Python 3
+- Install [Faker](https://github.com/joke2k/faker)
 ```
 pip3 install Faker
 ```
 
 ## Usage
 
-To execute the queries:
+To execute the sample queries:
 ```
 python3 main.py
 ```
