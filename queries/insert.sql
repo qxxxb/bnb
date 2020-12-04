@@ -4,7 +4,6 @@
 
 /* ### Inserting items */
 
-BEGIN
 INSERT INTO item (
     serial_no,
     quantity,

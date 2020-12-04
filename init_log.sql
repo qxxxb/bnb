@@ -1104,7 +1104,7 @@ INSERT INTO card (
         type,
         expire_month,
         expire_year
-    ) VALUES ('372472112232633', '1757', 'Discover', 8, 2030);
+    ) VALUES ('372472112232633', '1757', 'Discover', 9, 2030);
 INSERT INTO card (
         card_no,
         pin,
@@ -1328,7 +1328,7 @@ INSERT INTO card (
         type,
         expire_month,
         expire_year
-    ) VALUES ('3559639914068550', '607', 'American Express', 8, 2027);
+    ) VALUES ('3559639914068550', '607', 'American Express', 9, 2027);
 INSERT INTO card (
         card_no,
         pin,
@@ -1482,7 +1482,7 @@ INSERT INTO card (
         type,
         expire_month,
         expire_year
-    ) VALUES ('340623031774241', '889', 'American Express', 4, 2028);
+    ) VALUES ('340623031774241', '889', 'American Express', 5, 2028);
 INSERT INTO card (
         card_no,
         pin,
@@ -1874,7 +1874,7 @@ INSERT INTO card (
         type,
         expire_month,
         expire_year
-    ) VALUES ('4634362536445', '2313', 'JCB 16 digit', 9, 2027);
+    ) VALUES ('4634362536445', '2313', 'JCB 16 digit', 10, 2027);
 INSERT INTO card (
         card_no,
         pin,
@@ -1923,7 +1923,7 @@ INSERT INTO card (
         type,
         expire_month,
         expire_year
-    ) VALUES ('3564781453398767', '729', 'JCB 16 digit', 8, 2027);
+    ) VALUES ('3564781453398767', '729', 'JCB 16 digit', 9, 2027);
 INSERT INTO card (
         card_no,
         pin,
@@ -2261,365 +2261,365 @@ INSERT INTO card (
         expire_year
     ) VALUES ('4338695844647', '052', 'JCB 15 digit', 1, 2029);
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('paul36@goodwin.com', '373150292419647');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('waltersmichelle@yahoo.com', '373150292419647');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('rileyrebecca@hotmail.com', '3501659955292181');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('vicki85@yahoo.com', '348853444087756');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('reesegabriel@hotmail.com', '676282771804');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('uperez@hotmail.com', '341271278155796');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('kristin31@yahoo.com', '180025960308061');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('romerocaleb@crawford.com', '3596945888719119');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('xmyers@hotmail.com', '180071363072300');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('zwhite@boyd.com', '3536521386454229');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('gary51@yahoo.com', '639069191604');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('stefanie52@lucas.com', '2720555385401292');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('jonathandavis@rodriguez-webster.com', '3596902618739768');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('andersonmatthew@yahoo.com', '6576064931213489');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('edwardsjennifer@yahoo.com', '4853180767713752255');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('james62@yahoo.com', '370855314278994');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('ecooper@yahoo.com', '379041837937215');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('ginarusso@drake-miller.com', '3584492530540522');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('williamsheather@morales-brooks.biz', '213140033136695');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('othomas@vazquez.info', '3560576805127318');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('masseychristian@johnson.com', '38645407880200');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('williamsfrederick@payne.com', '375116346037618');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('paulaskinner@gmail.com', '4785003907708');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('philip98@bishop.com', '38645407880200');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('williamskatherine@yahoo.com', '4126476480376030');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('lanejoan@taylor.info', '4579791584206109774');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('jeremy89@hotmail.com', '5274760201829980');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('derek64@yahoo.com', '213173088325731');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('reesegabriel@hotmail.com', '2283190391502799');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('armstrongmatthew@yahoo.com', '2282530364950510');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('aliciaryan@miller.com', '341339185922705');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('lauren96@mosley.org', '060472340490');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('kgalvan@fisher.com', '36827231491865');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('sonya44@reid-jones.biz', '30426809309793');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('brenda23@schaefer-jenkins.biz', '4707232440558');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('william12@fisher.com', '30444910102882');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('howardjulie@adams.biz', '4648483973460674860');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('vicki85@yahoo.com', '4634362536445');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('comptonalan@yahoo.com', '5575077821698182');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('kimberlyreed@baldwin-scott.com', '30325708682450');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('znorris@hopkins.com', '3555141773317453');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('tracy75@thomas.com', '4417563425652010091');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('riverajoshua@hotmail.com', '4789739290633066');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('pcoleman@gmail.com', '30169335131592');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('johnsonrobert@hotmail.com', '3536521386454229');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('twillis@hotmail.com', '3531510502749963');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('brandondominguez@hotmail.com', '568601249929');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('allison69@gmail.com', '3575261153595555');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('william12@fisher.com', '4484412345479292107');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('edwardsjennifer@yahoo.com', '3508050248575942');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('kristin31@yahoo.com', '4633218150956922525');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('yholmes@gmail.com', '4857072282858229');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('asullivan@pierce.com', '501821102610');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('snyderhailey@gmail.com', '676318555239');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('jonathandavis@rodriguez-webster.com', '3549809732251547');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('bryanttracy@bruce-brown.com', '30449649017376');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('xbarker@gmail.com', '3580991106998810');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('mathiskeith@white.com', '6590443986637937');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('masseychristian@johnson.com', '501821102610');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('psmith@olson-jones.com', '4188495453329010740');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('philip98@bishop.com', '213170401248293');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('kristin31@yahoo.com', '180036671081426');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('brenda23@schaefer-jenkins.biz', '4853180767713752255');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('yholmes@gmail.com', '4789739290633066');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('xmyers@hotmail.com', '4784907845043152799');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('tracy75@thomas.com', '3521333047668776');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('andersonmatthew@yahoo.com', '4312023002419205');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('rebeccaolsen@hotmail.com', '4282951340419584');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('vicki85@yahoo.com', '4633218150956922525');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('wesleymitchell@hammond.biz', '345369153656684');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('johnsonkyle@porter.biz', '379041837937215');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('walkeryvonne@gmail.com', '4689580759786495');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('ronaldprice@leonard.biz', '3535780234280936');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('luislane@gmail.com', '3594110926310056');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('kallen@frye-dawson.com', '2560402818011914');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('kimberlybriggs@gmail.com', '3564781453398767');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('stevenwright@barnes-vargas.com', '2711786866282262');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('rebeccaolsen@hotmail.com', '379041837937215');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('shaffermaria@yahoo.com', '213140033136695');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('johnsonchristopher@yahoo.com', '344990918099737');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('tchen@hernandez.com', '5575077821698182');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('bethanybailey@lozano.com', '6011867412612224');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('daviesashley@wells.com', '574562412951');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('masseychristian@johnson.com', '180074366765672');
+    VALUES ('johnsonchristopher@yahoo.com', '574562412951');
 INSERT INTO buyer_card (email, card_no)
     VALUES ('williamssarah@hughes-hill.org', '6011109281841984');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('daviesashley@wells.com', '4312787731590');
+    VALUES ('ecooper@yahoo.com', '379041837937215');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('hillapril@jenkins.com', '4872139078829564');
+    VALUES ('asullivan@pierce.com', '501821102610');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('michael98@yahoo.com', '4348138056448831');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('comptonalan@yahoo.com', '345369153656684');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('williamsfrederick@payne.com', '2286758892220934');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('dwilliams@yahoo.com', '4171422261185');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('zwhite@boyd.com', '370855314278994');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('vincenttaylor@gonzalez-austin.com', '4848653357808272');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('nconner@parker.com', '4650712176543371020');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('amy34@yahoo.com', '2289321326002977');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('klinelinda@gallegos.org', '4645029277102275');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('fstewart@frazier.com', '4444065290793008');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('wesleymitchell@hammond.biz', '372472112232633');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('wileylisa@gmail.com', '3590476474430073');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('wesleymitchell@hammond.biz', '180077593488810');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('anthonyflowers@gmail.com', '30331781103554');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('bethanybailey@lozano.com', '4382593402300761144');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('chad36@hotmail.com', '6505537136570262');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('dbrown@arroyo.com', '4857072282858229');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('brandondominguez@hotmail.com', '4807256648318553691');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('brandon64@hotmail.com', '3508050248575942');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('slin@yahoo.com', '30403019229194');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('christopherlane@hotmail.com', '6011662698598357');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('vincenttaylor@gonzalez-austin.com', '4807256648318553691');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('melissaadams@gonzalez-mcdowell.biz', '30169335131592');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('lauren96@mosley.org', '4384123874398108');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('williamsheather@morales-brooks.biz', '36763202192952');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('armstrongmatthew@yahoo.com', '5169464184310336');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('johnsonchristopher@yahoo.com', '574562412951');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('lanejoan@taylor.info', '213154797361480');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('benjamin58@ward.com', '2231263026766056');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('gary19@yahoo.com', '213173088325731');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('clarkjonathan@yahoo.com', '3534297077872902');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('lanejoan@taylor.info', '4053985807164729941');
+    VALUES ('derek64@yahoo.com', '180014299836414');
 INSERT INTO buyer_card (email, card_no)
     VALUES ('samanthabrown@cox-wilson.com', '3537943540614630');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('eric39@yahoo.com', '180039182283010');
+    VALUES ('philip98@bishop.com', '213170401248293');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('sstanton@hotmail.com', '3543877956473069');
+    VALUES ('uperez@hotmail.com', '341271278155796');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('turnermichael@yahoo.com', '213108792674370');
+    VALUES ('walkeryvonne@gmail.com', '4689580759786495');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('johnsonkristina@yahoo.com', '4484412345479292107');
+    VALUES ('daviesashley@wells.com', '574562412951');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('knelson@frey.com', '6502165589609735');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('vancenathan@rojas.com', '3506005121054011');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('twillis@hotmail.com', '349104296546385');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('gary19@yahoo.com', '213170401248293');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('jeremy89@hotmail.com', '30249498563433');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('anthonyflowers@gmail.com', '180047844706096');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('johnschultz@hotmail.com', '4825247690181831');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('acuevas@gmail.com', '4618274224435286');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('lauren96@mosley.org', '2282530364950510');
+    VALUES ('kallen@frye-dawson.com', '4171422261185');
 INSERT INTO buyer_card (email, card_no)
     VALUES ('riverajoshua@hotmail.com', '30127113918838');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('alisonmichael@yahoo.com', '4207090649127813477');
+    VALUES ('xbarker@gmail.com', '3580991106998810');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('kmitchell@dorsey.com', '6505537136570262');
+    VALUES ('stevenwright@barnes-vargas.com', '2711786866282262');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('riverajoshua@hotmail.com', '340919090620428');
+    VALUES ('psmith@olson-jones.com', '4188495453329010740');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('peter44@yu.com', '4648483973460674860');
+    VALUES ('tchen@hernandez.com', '5575077821698182');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('narmstrong@clark-reynolds.com', '3559639914068550');
+    VALUES ('fstewart@frazier.com', '4444065290793008');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('edwardsjennifer@yahoo.com', '4489409811604470938');
+    VALUES ('kristin31@yahoo.com', '180036671081426');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('daniel43@nelson.biz', '340623031774241');
+    VALUES ('zwest@williams.com', '4728069549254280');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('nconner@parker.com', '4650712176543371020');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('bethanybailey@lozano.com', '4382593402300761144');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('rileyrebecca@hotmail.com', '3501659955292181');
 INSERT INTO buyer_card (email, card_no)
     VALUES ('masseychristian@johnson.com', '4009410794244768');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('aliciaryan@miller.com', '4784907845043152799');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('daviesashley@wells.com', '4559003986299684');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('daviesashley@wells.com', '6011347557518684');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('lauren96@mosley.org', '3531510502749963');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('julie67@hotmail.com', '4014302481100283');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('narmstrong@clark-reynolds.com', '2289321326002977');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('znorris@hopkins.com', '4521191352799');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('asullivan@pierce.com', '675969137115');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('kmitchell@dorsey.com', '4521191352799');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('pcoleman@gmail.com', '4807256648318553691');
+    VALUES ('klinelinda@gallegos.org', '4645029277102275');
 INSERT INTO buyer_card (email, card_no)
     VALUES ('jmyers@wright-mitchell.org', '2286758892220934');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('samantha06@osborne-williams.org', '180040922633472');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('benjamin58@ward.com', '568861960082');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('acuevas@gmail.com', '3584492530540522');
-INSERT INTO buyer_card (email, card_no)
     VALUES ('psmith@olson-jones.com', '375116346037618');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('rileyrebecca@hotmail.com', '3581513357645665');
+    VALUES ('lauren96@mosley.org', '3531510502749963');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('melissaadams@gonzalez-mcdowell.biz', '30169335131592');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('turnermichael@yahoo.com', '213108792674370');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('comptonalan@yahoo.com', '5575077821698182');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('pcoleman@gmail.com', '30169335131592');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('masseychristian@johnson.com', '501821102610');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('lanejoan@taylor.info', '213154797361480');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('slin@yahoo.com', '30403019229194');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('williamskatherine@yahoo.com', '4126476480376030');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('sstanton@hotmail.com', '3543877956473069');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('johnsonkristina@yahoo.com', '4484412345479292107');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('ronaldprice@leonard.biz', '4689580759786495');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('othomas@vazquez.info', '3560576805127318');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('allison69@gmail.com', '3575261153595555');
 INSERT INTO buyer_card (email, card_no)
     VALUES ('romerocaleb@crawford.com', '502000194600');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('cgomez@yahoo.com', '3534297077872902');
+    VALUES ('peter44@yu.com', '4648483973460674860');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('uperez@hotmail.com', '2242322168303099');
+    VALUES ('lauren96@mosley.org', '2282530364950510');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('gallagherangel@pena-russell.com', '4192359929503');
+    VALUES ('williamsfrederick@payne.com', '375116346037618');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('lauren96@mosley.org', '4384123874398108');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('reesegabriel@hotmail.com', '2283190391502799');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('kristin31@yahoo.com', '180025960308061');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('anthonyflowers@gmail.com', '30331781103554');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('brenda23@schaefer-jenkins.biz', '4853180767713752255');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('twillis@hotmail.com', '3531510502749963');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('jeremy89@hotmail.com', '5274760201829980');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('jeremy89@hotmail.com', '30249498563433');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('lanejoan@taylor.info', '4579791584206109774');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('kallen@frye-dawson.com', '2560402818011914');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('andersonmatthew@yahoo.com', '4312023002419205');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('ginarusso@drake-miller.com', '3584492530540522');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('johnsonkyle@porter.biz', '379041837937215');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('masseychristian@johnson.com', '180074366765672');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('brandondominguez@hotmail.com', '4807256648318553691');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('brandondominguez@hotmail.com', '568601249929');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('yholmes@gmail.com', '4857072282858229');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('lanejoan@taylor.info', '4053985807164729941');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('xmyers@hotmail.com', '180071363072300');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('williamsheather@morales-brooks.biz', '213165112153931');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('vincenttaylor@gonzalez-austin.com', '4807256648318553691');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('mathiskeith@white.com', '6590443986637937');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('armstrongmatthew@yahoo.com', '2282530364950510');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('james62@yahoo.com', '370855314278994');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('eric39@yahoo.com', '180039182283010');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('znorris@hopkins.com', '3555141773317453');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('michael98@yahoo.com', '4348138056448831');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('amy34@yahoo.com', '2289321326002977');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('williamsheather@morales-brooks.biz', '36763202192952');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('zwhite@boyd.com', '370855314278994');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('acuevas@gmail.com', '4618274224435286');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('daviesashley@wells.com', '4559003986299684');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('daviscristian@russo-davis.net', '2272908237254967');
 INSERT INTO buyer_card (email, card_no)
     VALUES ('jenniferroy@osborne.com', '349708752741916');
 INSERT INTO buyer_card (email, card_no)
     VALUES ('howardjulie@adams.biz', '4807256648318553691');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('daviscristian@russo-davis.net', '2272908237254967');
+    VALUES ('gary19@yahoo.com', '213173088325731');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('lisaholmes@hotmail.com', '180071363072300');
+    VALUES ('aliciaryan@miller.com', '4784907845043152799');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('comptonalan@yahoo.com', '6576064931213489');
+    VALUES ('lauren96@mosley.org', '060472340490');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('edwardsjonathan@hotmail.com', '4728069549254280');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('kallen@frye-dawson.com', '4171422261185');
-INSERT INTO buyer_card (email, card_no)
-    VALUES ('linda24@jones-compton.com', '4872139078829564');
+    VALUES ('hillapril@jenkins.com', '4872139078829564');
 INSERT INTO buyer_card (email, card_no)
     VALUES ('rachel68@yahoo.com', '180071363072300');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('derek64@yahoo.com', '180014299836414');
+    VALUES ('tracy75@thomas.com', '3521333047668776');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('williamsheather@morales-brooks.biz', '213165112153931');
+    VALUES ('benjamin58@ward.com', '2231263026766056');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('brandon64@hotmail.com', '3508050248575942');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('jonathandavis@rodriguez-webster.com', '3596902618739768');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('alisonmichael@yahoo.com', '4207090649127813477');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('william12@fisher.com', '30444910102882');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('chad36@hotmail.com', '6505537136570262');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('wesleymitchell@hammond.biz', '180077593488810');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('masseychristian@johnson.com', '38645407880200');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('pcoleman@gmail.com', '4807256648318553691');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('gary19@yahoo.com', '213170401248293');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('sonya44@reid-jones.biz', '30426809309793');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('yholmes@gmail.com', '4789739290633066');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('ronaldprice@leonard.biz', '3535780234280936');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('kimberlyreed@baldwin-scott.com', '30325708682450');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('romerocaleb@crawford.com', '3596945888719119');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('narmstrong@clark-reynolds.com', '2289321326002977');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('gallagherangel@pena-russell.com', '4192359929503');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('daviesashley@wells.com', '4312787731590');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('riverajoshua@hotmail.com', '4789739290633066');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('dbrown@arroyo.com', '4857072282858229');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('znorris@hopkins.com', '4521191352799');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('gary51@yahoo.com', '639069191604');
 INSERT INTO buyer_card (email, card_no)
     VALUES ('chad36@hotmail.com', '180014299836414');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('tracyscott@hardin-rodriguez.com', '675969137115');
+    VALUES ('johnsonrobert@hotmail.com', '3536521386454229');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('zwest@williams.com', '4728069549254280');
+    VALUES ('williamsheather@morales-brooks.biz', '213140033136695');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('ronaldprice@leonard.biz', '4689580759786495');
+    VALUES ('reesegabriel@hotmail.com', '676282771804');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('bethanybailey@lozano.com', '6011867412612224');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('johnschultz@hotmail.com', '4825247690181831');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('samantha06@osborne-williams.org', '180040922633472');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('comptonalan@yahoo.com', '345369153656684');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('wesleymitchell@hammond.biz', '372472112232633');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('riverajoshua@hotmail.com', '340919090620428');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('linda24@jones-compton.com', '4872139078829564');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('williamsfrederick@payne.com', '2286758892220934');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('william12@fisher.com', '4484412345479292107');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('daviesashley@wells.com', '6011347557518684');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('paulaskinner@gmail.com', '4785003907708');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('edwardsjennifer@yahoo.com', '4489409811604470938');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('philip98@bishop.com', '38645407880200');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('wesleymitchell@hammond.biz', '345369153656684');
 INSERT INTO buyer_card (email, card_no)
     VALUES ('vodonnell@griffin.biz', '4872139078829564');
 INSERT INTO buyer_card (email, card_no)
-    VALUES ('riverajoshua@hotmail.com', '377410820745384');
+    VALUES ('brenda23@schaefer-jenkins.biz', '4707232440558');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('comptonalan@yahoo.com', '6576064931213489');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('tracyscott@hardin-rodriguez.com', '675969137115');
 INSERT INTO buyer_card (email, card_no)
     VALUES ('ginarusso@drake-miller.com', '180041031587401');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('kristin31@yahoo.com', '4633218150956922525');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('dwilliams@yahoo.com', '4171422261185');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('riverajoshua@hotmail.com', '377410820745384');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('cgomez@yahoo.com', '3534297077872902');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('kmitchell@dorsey.com', '6505537136570262');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('snyderhailey@gmail.com', '676318555239');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('uperez@hotmail.com', '2242322168303099');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('lisaholmes@hotmail.com', '180071363072300');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('asullivan@pierce.com', '675969137115');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('acuevas@gmail.com', '3584492530540522');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('edwardsjennifer@yahoo.com', '4853180767713752255');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('derek64@yahoo.com', '213173088325731');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('vicki85@yahoo.com', '4633218150956922525');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('kgalvan@fisher.com', '36827231491865');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('anthonyflowers@gmail.com', '180047844706096');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('johnsonchristopher@yahoo.com', '344990918099737');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('zwhite@boyd.com', '3536521386454229');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('armstrongmatthew@yahoo.com', '5169464184310336');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('edwardsjennifer@yahoo.com', '3508050248575942');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('bryanttracy@bruce-brown.com', '30449649017376');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('xmyers@hotmail.com', '4784907845043152799');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('kmitchell@dorsey.com', '4521191352799');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('twillis@hotmail.com', '349104296546385');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('clarkjonathan@yahoo.com', '3534297077872902');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('narmstrong@clark-reynolds.com', '3559639914068550');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('rebeccaolsen@hotmail.com', '4282951340419584');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('daniel43@nelson.biz', '340623031774241');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('wileylisa@gmail.com', '3590476474430073');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('vicki85@yahoo.com', '348853444087756');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('rileyrebecca@hotmail.com', '3581513357645665');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('vancenathan@rojas.com', '3506005121054011');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('howardjulie@adams.biz', '4648483973460674860');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('aliciaryan@miller.com', '341339185922705');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('waltersmichelle@yahoo.com', '373150292419647');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('benjamin58@ward.com', '568861960082');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('knelson@frey.com', '6502165589609735');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('kimberlybriggs@gmail.com', '3564781453398767');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('rebeccaolsen@hotmail.com', '379041837937215');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('shaffermaria@yahoo.com', '213140033136695');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('stefanie52@lucas.com', '2720555385401292');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('vincenttaylor@gonzalez-austin.com', '4848653357808272');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('jonathandavis@rodriguez-webster.com', '3549809732251547');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('christopherlane@hotmail.com', '6011662698598357');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('tracy75@thomas.com', '4417563425652010091');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('edwardsjonathan@hotmail.com', '4728069549254280');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('luislane@gmail.com', '3594110926310056');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('vicki85@yahoo.com', '4634362536445');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('julie67@hotmail.com', '4014302481100283');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('andersonmatthew@yahoo.com', '6576064931213489');
+INSERT INTO buyer_card (email, card_no)
+    VALUES ('paul36@goodwin.com', '373150292419647');
 INSERT INTO seller (email)
     VALUES ('myersmark@hotmail.com');
 INSERT INTO seller (email)
@@ -9627,19 +9627,19 @@ INSERT INTO 'order' (
         delivery_email,
         timestamp,
         card_no
-    ) VALUES ('esmith@hotmail.com', 'brandonsaunders@nichols-joyce.biz', '2020-03-06 00:47:55', '3518934409400206');
+    ) VALUES ('esmith@hotmail.com', 'brandonsaunders@nichols-joyce.biz', '2020-12-04 06:00:12', '3518934409400206');
 INSERT INTO 'order' (
         buyer_email,
         delivery_email,
         timestamp,
         card_no
-    ) VALUES ('brandon64@hotmail.com', 'donnasmith@gmail.com', '2020-04-01 14:56:19', '676119328257');
+    ) VALUES ('brandon64@hotmail.com', 'randy00@young.biz', '2020-09-16 15:33:52', '676119328257');
 INSERT INTO 'order' (
         buyer_email,
         delivery_email,
         timestamp,
         card_no
-    ) VALUES ('michael71@barajas.com', 'adam91@hawkins.com', '2020-03-03 06:36:08', '30449649017376');
+    ) VALUES ('michael71@barajas.com', 'angelahernandez@gmail.com', '2020-03-03 06:36:08', '30449649017376');
 INSERT INTO 'order' (
         buyer_email,
         delivery_email,
@@ -19898,303 +19898,303 @@ INSERT INTO coupon (discount, serial_no, email) VALUES (33, '2BSZUM5KAOR9G5GXMZ'
 INSERT INTO coupon (discount, serial_no, email) VALUES (42, 'FIIVD9380IDSKURUJ', 'knelson@frey.com');
 INSERT INTO coupon (discount, serial_no, email) VALUES (9, 'WA25GWM', 'christiangutierrez@may.com');
 INSERT INTO coupon (discount, serial_no, email) VALUES (18, '6WMZLW55AV0D86', 'angela19@gmail.com');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('I0K5BF0XOU8RRWJS', 'explain');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('6V4B2UHOK5ZM1OWYE8MV', 'attorney');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('L14HL58UR82FUOI629TZJ', 'whatever');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('UVVHVAESPAV8HXMX45', 'every');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('HHHDOHAVS0EO2K4RRS04', 'matter');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('YUJ72682YR6XBDTDSKH', 'character');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2CID2PM88ZLMUDAL', 'feeling');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('CZFJ09QE', 'huge');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('NIAUET3FH6CU', 'provide');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('MLERQAU3CZW9Y3C', 'explain');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('Z4QYNGYHM7GFKULCOI2UL', 'including');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('WPF946Y2FHYCJCVBZ5DS', 'apply');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2K7X7R3APTU1FDLSP84', 'several');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('3HHJP2PO2PP', 'fall');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2SW2XT1PPYX', 'suggest');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZCDOKYIXEJ7UHB0WXVT', 'data');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('QYJ6CP', 'several');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('BUE03EPCMK5CN5W86K7', 'probably');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZGDI8EJIXNAIHAUG0V', 'marriage');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('QCO6X9ETFPG15BL2', 'memory');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('7YNBEF', 'bring');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('PRBQVB3CP8C', 'feeling');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('Y0D4BUL8', 'every');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ET1Q87U38A3MJ', 'light');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('6MA0OT1J2', 'which');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('V9FI47R25KVSIK', 'marriage');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('QQEYO7KC8BSL5FJ', 'choose');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('WDWIEDU09', 'reflect');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('9LNGWY5DWNPA51K2', 'learn');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('HFO63EMAFK5M4V0PD5V8', 'along');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2K7X7R3APTU1FDLSP84', 'suggest');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('TZYP10H0544', 'level');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('WI6YVYO', 'power');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('VBMSWQECXWSDL7J', 'through');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('T3RTSEYP98CYC1TYM', 'debate');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('FIIVD9380IDSKURUJ', 'door');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('R0UDL5T0Q', 'turn');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('Y88JFXE7I41E', 'tell');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2228EKDSEF', 'hand');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('CUQUP009JQLD4ZRBZS', 'apply');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('FNJP0CUCSX2G282D26L58', 'inside');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ETUSGK66QD61ZH3WOP8R', 'door');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('CDQIS', 'woman');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('M95K5K9QZ', 'million');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('589SANB', 'likely');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2I43566IFBO', 'choose');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('JVDOL8R', 'result');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('LYBLSUB7S10666J6VJOCJ', 'window');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('0I8XSK1UG5C3X', 'probably');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZGDI8EJIXNAIHAUG0V', 'window');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('GVU0CP56W22SHL', 'responsibility');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('3BVQ0WX4BBQRYZ0K3O0R', 'which');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('T5TJZ3PWAKO1O3XF', 'allow');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('V2U95QBAM', 'stock');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('N1UTCLLRD5VJWEHDWBN6', 'window');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('1XSJFSKVS6C8', 'operation');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('BKWTLRI9EO23T4J63345P', 'including');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('QYYXP', 'anything');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('A2EPH58ZDGO7J', 'data');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('57VGLO', 'apply');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('WVYMG3GV', 'most');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZCDOKYIXEJ7UHB0WXVT', 'apply');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('MA4BF371H1LMWOCJ', 'most');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('77ATEV', 'list');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('DITF47NV9AH76', 'power');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('8JVZWM0IHY17XX', 'throughout');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('L3IIEMC1WYM3W1KGXQ9R1', 'this');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('UVVHVAESPAV8HXMX45', 'whatever');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('D31Z42Z', 'whatever');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('UXHLXFZRSKO', 'result');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('XLVYCBFBC03JVAQG', 'tell');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('RAONEMJLR17H5', 'probably');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZGDI8EJIXNAIHAUG0V', 'learn');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('QVA2UM9VYSWZ2VV', 'build');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('MKO9QET3HY7P', 'learn');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('PDC44U9YAF75YQQJG', 'reflect');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('77ATEV', 'explain');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('I0OJ9748', 'hand');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('U9DHEPXBH4CDB', 'explain');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('BVTXD071JBIUY', 'peace');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('LFZV37F28', 'hand');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('LN0AZUKE0A1TMT3GJ59', 'prepare');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('D3KWLC77', 'tell');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('7SPGQCTJ83R7DVZD', 'learn');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('YXRFHRLQ', 'policy');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2ITL25BIV7E2VW2THO', 'build');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('45E2D7MV4MJN0', 'power');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZQA56', 'which');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('PLUBPMU7S9ZQ', 'baby');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('TNQ84HUOAXE', 'economy');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('62IZOU76V1EPAPZ', 'reflect');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('3C0DV9JO5RS5F', 'hand');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('PLUBPMU7S9ZQ', 'visit');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('D4U6ZK8KO3U9N', 'thing');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('BUE03EPCMK5CN5W86K7', 'total');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('MQC9YX5NTF169OM1', 'fall');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('N1CTQN1AEDWM04Q00', 'probably');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('YTT6USN5BCYA', 'learn');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('8GIVGTLBQM6Z7J2D4GEK', 'every');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('UUSH3D8PB8YBW6Z', 'fall');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('53F6XOJ1JUIB', 'prepare');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2SW2XT1PPYX', 'build');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('HFO63EMAFK5M4V0PD5V8', 'attorney');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ASTLCU', 'customer');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('97QPRUTYL', 'attorney');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('RAONEMJLR17H5', 'data');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZD2CRTD', 'reflect');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('5K4EC6Y', 'explain');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('MVO34C', 'cold');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('MT9WD29UG1D8JKZXYHBR', 'window');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('RGSP8Y', 'result');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('7ZNIARN4KATYPLOR', 'stock');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('KU21KBD7E', 'build');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('A2EPH58ZDGO7J', 'herself');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('JWOG2WE8', 'reflect');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('J5C70PD4F9807NC5', 'positive');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('X9QBYBID', 'ahead');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('U9DHEPXBH4CDB', 'most');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('02C91G77F9S3T', 'card');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('LFZV37F28', 'approach');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('1S7WS7PKONTWYWX4', 'policy');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('KZ9U1E2JUS9SMJ6TQ8K', 'huge');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('92RNQOWISW5Y9', 'baby');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('8GIVGTLBQM6Z7J2D4GEK', 'data');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('UEN7FUN', 'report');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('BW30ULX2XGPUPLP', 'ahead');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('UYZQMXQED8H2TW', 'hand');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('5A2HLJ6P', 'throughout');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('EY9BOWO0ONREKII9SYIQG', 'character');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('3QM188FD73U', 'reflect');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('6D6JIDJKU2CCLYW', 'likely');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('YXRFHRLQ', 'write');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('EGDFF193GSKZX', 'memory');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('A9ACTJAH3F', 'operation');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('O8KRDW60J3K0XRHDT6XDT', 'suggest');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('UPT1C', 'along');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('CJ8GR5XGB9XNXCW4LKME', 'total');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('92RNQOWISW5Y9', 'several');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('6Q3GO4LPZG2E8LZQ7DUXY', 'through');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('L14HL58UR82FUOI629TZJ', 'visit');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('QIO1AG64EYG02PKZEF6', 'character');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('3OPK3DH4ZI73RO', 'huge');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('3TGKD7HO9EKV69R0UIP', 'herself');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZGDI8EJIXNAIHAUG0V', 'inside');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('HK06V2AR', 'thing');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('VF3A3D', 'inside');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('7FN4G7FYOI18A2AQVD', 'which');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('M70ZQD6N2FJQ1OJA', 'election');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('RI5SPSRSS1R29UB', 'several');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('97N27TIYC', 'character');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('04GWNLKR', 'write');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('5FKZ5E1M87QESJ30Q', 'reflect');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ASTLCU', 'thing');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('JVDOL8R', 'peace');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('90K8LVI', 'thing');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('30OR6SWDE690', 'million');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2C67F990PDFNMH2KND', 'million');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('1XSJFSKVS6C8', 'might');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('KU21KBD7E', 'ahead');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('5PQJ744', 'including');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('CWO0WGF5R', 'might');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('CWO0WGF5R', 'tree');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('5A2HLJ6P', 'probably');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('Y2Y239JDBZL66K3', 'increase');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('949BZO', 'must');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('EY9BOWO0ONREKII9SYIQG', 'apply');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('FZ56D1Q7Q', 'card');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2ITL25BIV7E2VW2THO', 'learn');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('FCU04Y3TF63OILE5RSL3', 'data');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('Y2Y239JDBZL66K3', 'turn');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('5PQJ744', 'election');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('IHKERZ4HCFSBT', 'throughout');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('CXWEZJ', 'every');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('EQ8GW', 'hand');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('SANR15W261T', 'light');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('7L9KY', 'election');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('3BVQ0WX4BBQRYZ0K3O0R', 'responsibility');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('N02AJ1BU62TVQAV', 'whatever');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('UPT1C', 'prepare');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ERZG9X', 'election');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('MUJZQQ', 'approach');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('AJ7OC2KWG', 'light');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2SW2XT1PPYX', 'learn');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('F0U1TA', 'through');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('0I8XSK1UG5C3X', 'learn');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('AGCYAE21BNK19H', 'tell');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZQA56', 'laugh');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('5PQJ744', 'several');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('22K2FGBX3B7MGM3D4U', 'provide');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('M70ZQD6N2FJQ1OJA', 'stock');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2IS59RXMJQH6K', 'customer');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('99QTL5HHJXO8BAPA55VO', 'huge');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('R0UDL5T0Q', 'allow');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('30OR6SWDE690', 'visit');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('9DGZDOJSMHYA', 'probably');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('CZFJ09QE', 'tell');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('PRBQVB3CP8C', 'probably');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('CBMBFZFMGFQQ', 'raise');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('S1K5SO8KVT5DEA1', 'feeling');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('R7BSNEKS4IGM4OVIEXLK', 'anything');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('3XFYKT1MPFV4KS9AT900', 'write');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('5X84IINRW', 'choose');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('W7SM1', 'party');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('Y5X3BG429E28TN', 'choose');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('RI5SPSRSS1R29UB', 'tell');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('Y0D4BUL8', 'several');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('N1UTCLLRD5VJWEHDWBN6', 'which');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('27MCUEOD4FUNSK', 'explain');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('699OPJEQ5B20HL07', 'marriage');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('IVT7I9WFUVYNTDK', 'office');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('BH5BATRJWJY', 'anything');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('XLVYCBFBC03JVAQG', 'class');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('H8JDI', 'lose');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('XMMDEQZECUBMWVS8', 'operation');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('JWOG2WE8', 'total');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('H8JDI', 'card');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('PLUBPMU7S9ZQ', 'office');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('NB24TDA92', 'strategy');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('HFO63EMAFK5M4V0PD5V8', 'reflect');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('3BVQ0WX4BBQRYZ0K3O0R', 'inside');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('SANR15W261T', 'might');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('OOCLVBBZCZIG', 'election');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('27MCUEOD4FUNSK', 'environment');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('F56V57VNWTG0PEW', 'thing');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('M70ZQD6N2FJQ1OJA', 'thing');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('S1K5SO8KVT5DEA1', 'matter');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('1S7WS7PKONTWYWX4', 'hand');
 INSERT INTO item_keyword (serial_no, keyword) VALUES ('UQ0M7JMGK', 'several');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2I43566IFBO', 'marriage');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('VF3A3D', 'this');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('D4U6ZK8KO3U9N', 'provide');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('92RNQOWISW5Y9', 'apply');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('DLTZVZJ', 'coach');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('F0U1TA', 'through');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('97QPRUTYL', 'attorney');
 INSERT INTO item_keyword (serial_no, keyword) VALUES ('2IS59RXMJQH6K', 'cold');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('LYBLSUB7S10666J6VJOCJ', 'allow');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('GF4IPWZXNXZNUJM', 'among');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('RRCVTYZQKRRBXM38CN1', 'might');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('L8R0R2CPTTN2Z0SQ55BV', 'through');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2CID2PM88ZLMUDAL', 'attorney');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('D4PEN3PQOBHRL', 'herself');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('WSZK32VL95', 'might');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('GFN4N4GWD', 'whatever');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('LYBLSUB7S10666J6VJOCJ', 'responsibility');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('5QQQHCZ', 'fall');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('F0U1TA', 'peace');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('Z5OJ6ZTHT1O76CHLG9', 'positive');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('WPF946Y2FHYCJCVBZ5DS', 'huge');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('O0AJGLWV5YIJSHGE3', 'laugh');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('9TD3D26HXZKO1G0HIE5', 'this');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('EHMPBT02NO4LGPA', 'card');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('LU89A', 'write');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('2I43566IFBO', 'turn');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('9GSJMDS78HQN', 'must');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('H8JDI', 'strategy');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('30OR6SWDE690', 'approach');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('B5B2RB', 'apply');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('MJJSR96LPHTNMZHIR8REL', 'election');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('XHYK1', 'positive');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('MJJSR96LPHTNMZHIR8REL', 'probably');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('LU89A', 'debate');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('97QPRUTYL', 'visit');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('ILQNSNAUOE8', 'raise');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('KZ9U1E2JUS9SMJ6TQ8K', 'million');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('LFZV37F28', 'along');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('21UGUUBNP1', 'result');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('B732DEO', 'along');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('UFILA9KZ2QEMYG76', 'feeling');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('3OT4U0OZFD95E9K', 'every');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('5X84IINRW', 'office');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('13URU71I0ET52TX', 'total');
 INSERT INTO item_keyword (serial_no, keyword) VALUES ('HHHDOHAVS0EO2K4RRS04', 'laugh');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('LHK0T9S', 'light');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('3EERUKR5EZZUJRL6', 'party');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('C6TPIU7QZ4W3XY9', 'fall');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('GU6848TQ4VA5R', 'matter');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('APVBWS1XK7E', 'explain');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('GF4IPWZXNXZNUJM', 'character');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('V9FI47R25KVSIK', 'build');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('AJ7OC2KWG', 'light');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('M70ZQD6N2FJQ1OJA', 'thing');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('F0U1TA', 'peace');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('D4U6ZK8KO3U9N', 'provide');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('7L9KY', 'election');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('A2EPH58ZDGO7J', 'data');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('97N27TIYC', 'character');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('CZFJ09QE', 'huge');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('JVDOL8R', 'result');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('9TD3D26HXZKO1G0HIE5', 'this');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('22K2FGBX3B7MGM3D4U', 'provide');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('V9FI47R25KVSIK', 'marriage');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('R0UDL5T0Q', 'turn');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZGDI8EJIXNAIHAUG0V', 'learn');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('WVYMG3GV', 'most');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('TZYP10H0544', 'level');
 INSERT INTO item_keyword (serial_no, keyword) VALUES ('RI5SPSRSS1R29UB', 'attorney');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('M70ZQD6N2FJQ1OJA', 'which');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('92RNQOWISW5Y9', 'apply');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('CZFJ09QE', 'tell');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZQA56', 'laugh');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('V2U95QBAM', 'stock');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('IVT7I9WFUVYNTDK', 'office');
 INSERT INTO item_keyword (serial_no, keyword) VALUES ('RRCVTYZQKRRBXM38CN1', 'tell');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('45E2D7MV4MJN0', 'bring');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('VPKLW00GUMQ89S7QV', 'probably');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('DTJ3FON8UE3D95N4INSF', 'fall');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('5X84IINRW', 'whatever');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('WE1Q5UY', 'bring');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('1XSJFSKVS6C8', 'every');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('3OPK3DH4ZI73RO', 'report');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('M95K5K9QZ', 'policy');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('LYBLSUB7S10666J6VJOCJ', 'apply');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('OOCLVBBZCZIG', 'apply');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('VBMSWQECXWSDL7J', 'most');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('30OR6SWDE690', 'huge');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('TS0AU', 'inside');
-INSERT INTO item_keyword (serial_no, keyword) VALUES ('CNB4GX0R2UPU', 'total');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('8JVZWM0IHY17XX', 'throughout');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('GU6848TQ4VA5R', 'matter');
 INSERT INTO item_keyword (serial_no, keyword) VALUES ('3OT4U0OZFD95E9K', 'tree');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2ITL25BIV7E2VW2THO', 'build');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('77ATEV', 'explain');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('LYBLSUB7S10666J6VJOCJ', 'window');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('DITF47NV9AH76', 'power');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('5A2HLJ6P', 'throughout');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('M95K5K9QZ', 'policy');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('589SANB', 'likely');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('BUE03EPCMK5CN5W86K7', 'probably');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('3OT4U0OZFD95E9K', 'every');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('45E2D7MV4MJN0', 'bring');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('RAONEMJLR17H5', 'probably');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('8GIVGTLBQM6Z7J2D4GEK', 'data');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('3BVQ0WX4BBQRYZ0K3O0R', 'which');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('6V4B2UHOK5ZM1OWYE8MV', 'attorney');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('QYYXP', 'anything');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('UEN7FUN', 'report');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('GF4IPWZXNXZNUJM', 'character');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('FIIVD9380IDSKURUJ', 'door');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('5X84IINRW', 'choose');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('IHKERZ4HCFSBT', 'throughout');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('CWO0WGF5R', 'might');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('A2EPH58ZDGO7J', 'herself');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('30OR6SWDE690', 'huge');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('3BVQ0WX4BBQRYZ0K3O0R', 'inside');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2IS59RXMJQH6K', 'customer');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('Y0D4BUL8', 'several');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2I43566IFBO', 'choose');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('S1K5SO8KVT5DEA1', 'matter');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('6D6JIDJKU2CCLYW', 'likely');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('UFILA9KZ2QEMYG76', 'feeling');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('Y88JFXE7I41E', 'tell');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ET1Q87U38A3MJ', 'light');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('30OR6SWDE690', 'approach');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('MJJSR96LPHTNMZHIR8REL', 'election');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('3BVQ0WX4BBQRYZ0K3O0R', 'responsibility');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('VF3A3D', 'this');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('WPF946Y2FHYCJCVBZ5DS', 'apply');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZCDOKYIXEJ7UHB0WXVT', 'data');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ETUSGK66QD61ZH3WOP8R', 'door');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2K7X7R3APTU1FDLSP84', 'suggest');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('Z5OJ6ZTHT1O76CHLG9', 'positive');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('M70ZQD6N2FJQ1OJA', 'stock');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('F56V57VNWTG0PEW', 'thing');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('W7SM1', 'party');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('6MA0OT1J2', 'which');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('VBMSWQECXWSDL7J', 'most');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('7YNBEF', 'bring');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('EQ8GW', 'hand');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('JWOG2WE8', 'reflect');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('WI6YVYO', 'power');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('U9DHEPXBH4CDB', 'explain');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('D3KWLC77', 'tell');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('HFO63EMAFK5M4V0PD5V8', 'reflect');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2I43566IFBO', 'turn');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('HHHDOHAVS0EO2K4RRS04', 'matter');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('BUE03EPCMK5CN5W86K7', 'total');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('UPT1C', 'prepare');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('BW30ULX2XGPUPLP', 'ahead');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('PRBQVB3CP8C', 'probably');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2CID2PM88ZLMUDAL', 'attorney');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('LYBLSUB7S10666J6VJOCJ', 'apply');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('30OR6SWDE690', 'million');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('YXRFHRLQ', 'policy');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('JWOG2WE8', 'total');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('62IZOU76V1EPAPZ', 'reflect');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('L14HL58UR82FUOI629TZJ', 'visit');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('H8JDI', 'strategy');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('21UGUUBNP1', 'result');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('QYJ6CP', 'several');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('WSZK32VL95', 'might');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZQA56', 'which');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('WDWIEDU09', 'reflect');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('0I8XSK1UG5C3X', 'probably');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('99QTL5HHJXO8BAPA55VO', 'huge');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2SW2XT1PPYX', 'build');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('3OPK3DH4ZI73RO', 'huge');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('OOCLVBBZCZIG', 'election');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('LN0AZUKE0A1TMT3GJ59', 'prepare');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ASTLCU', 'customer');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('1S7WS7PKONTWYWX4', 'hand');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('T5TJZ3PWAKO1O3XF', 'allow');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2ITL25BIV7E2VW2THO', 'learn');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('9GSJMDS78HQN', 'must');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('13URU71I0ET52TX', 'total');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('PLUBPMU7S9ZQ', 'visit');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('B732DEO', 'along');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2C67F990PDFNMH2KND', 'million');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('JVDOL8R', 'peace');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('RRCVTYZQKRRBXM38CN1', 'might');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('NIAUET3FH6CU', 'provide');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('04GWNLKR', 'write');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('C6TPIU7QZ4W3XY9', 'fall');
 INSERT INTO item_keyword (serial_no, keyword) VALUES ('8HBG25ODWXJT9ECAHI', 'peace');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('5PQJ744', 'election');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('WE1Q5UY', 'bring');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('GF4IPWZXNXZNUJM', 'among');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('B5B2RB', 'apply');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('Z4QYNGYHM7GFKULCOI2UL', 'including');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('LFZV37F28', 'hand');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('5PQJ744', 'several');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZCDOKYIXEJ7UHB0WXVT', 'apply');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('90K8LVI', 'thing');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('53F6XOJ1JUIB', 'prepare');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('8GIVGTLBQM6Z7J2D4GEK', 'every');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('949BZO', 'must');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('5K4EC6Y', 'explain');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('27MCUEOD4FUNSK', 'explain');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('WPF946Y2FHYCJCVBZ5DS', 'huge');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('LYBLSUB7S10666J6VJOCJ', 'responsibility');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('QCO6X9ETFPG15BL2', 'memory');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('HFO63EMAFK5M4V0PD5V8', 'attorney');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('BH5BATRJWJY', 'anything');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2K7X7R3APTU1FDLSP84', 'several');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ASTLCU', 'thing');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('GFN4N4GWD', 'whatever');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('PLUBPMU7S9ZQ', 'office');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('3EERUKR5EZZUJRL6', 'party');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('APVBWS1XK7E', 'explain');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('I0OJ9748', 'hand');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('0I8XSK1UG5C3X', 'learn');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('Y0D4BUL8', 'every');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('XMMDEQZECUBMWVS8', 'operation');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('SANR15W261T', 'might');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('9LNGWY5DWNPA51K2', 'learn');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ERZG9X', 'election');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('97QPRUTYL', 'visit');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('1S7WS7PKONTWYWX4', 'policy');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('N1UTCLLRD5VJWEHDWBN6', 'window');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('PLUBPMU7S9ZQ', 'baby');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('T3RTSEYP98CYC1TYM', 'debate');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ILQNSNAUOE8', 'raise');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('J5C70PD4F9807NC5', 'positive');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('6Q3GO4LPZG2E8LZQ7DUXY', 'through');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('92RNQOWISW5Y9', 'several');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('CNB4GX0R2UPU', 'total');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('699OPJEQ5B20HL07', 'marriage');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('7SPGQCTJ83R7DVZD', 'learn');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('MJJSR96LPHTNMZHIR8REL', 'probably');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('Y5X3BG429E28TN', 'choose');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('BKWTLRI9EO23T4J63345P', 'including');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('RGSP8Y', 'result');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('57VGLO', 'apply');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('3QM188FD73U', 'reflect');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('CUQUP009JQLD4ZRBZS', 'apply');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('DLTZVZJ', 'coach');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('LHK0T9S', 'light');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('5X84IINRW', 'whatever');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('KU21KBD7E', 'ahead');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('27MCUEOD4FUNSK', 'environment');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('LFZV37F28', 'along');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('YXRFHRLQ', 'write');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('S1K5SO8KVT5DEA1', 'feeling');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('1XSJFSKVS6C8', 'operation');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('Y2Y239JDBZL66K3', 'increase');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('CXWEZJ', 'every');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('XLVYCBFBC03JVAQG', 'class');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('UXHLXFZRSKO', 'result');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('H8JDI', 'lose');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('QQEYO7KC8BSL5FJ', 'choose');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('1XSJFSKVS6C8', 'every');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('L3IIEMC1WYM3W1KGXQ9R1', 'this');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('92RNQOWISW5Y9', 'baby');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('3OPK3DH4ZI73RO', 'report');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('GVU0CP56W22SHL', 'responsibility');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('EY9BOWO0ONREKII9SYIQG', 'character');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('PDC44U9YAF75YQQJG', 'reflect');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('VPKLW00GUMQ89S7QV', 'probably');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('V9FI47R25KVSIK', 'build');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('MUJZQQ', 'approach');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('CDQIS', 'woman');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('O0AJGLWV5YIJSHGE3', 'laugh');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('MQC9YX5NTF169OM1', 'fall');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('N1UTCLLRD5VJWEHDWBN6', 'which');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('XHYK1', 'positive');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('KZ9U1E2JUS9SMJ6TQ8K', 'huge');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('N1CTQN1AEDWM04Q00', 'probably');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('FNJP0CUCSX2G282D26L58', 'inside');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('CBMBFZFMGFQQ', 'raise');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('A9ACTJAH3F', 'operation');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('CWO0WGF5R', 'tree');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('U9DHEPXBH4CDB', 'most');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2CID2PM88ZLMUDAL', 'feeling');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2I43566IFBO', 'marriage');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('MVO34C', 'cold');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('R7BSNEKS4IGM4OVIEXLK', 'anything');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('HK06V2AR', 'thing');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('KU21KBD7E', 'build');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('KZ9U1E2JUS9SMJ6TQ8K', 'million');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('5A2HLJ6P', 'probably');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('TNQ84HUOAXE', 'economy');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZGDI8EJIXNAIHAUG0V', 'marriage');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('VF3A3D', 'inside');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('Y2Y239JDBZL66K3', 'turn');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('DTJ3FON8UE3D95N4INSF', 'fall');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('N02AJ1BU62TVQAV', 'whatever');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZGDI8EJIXNAIHAUG0V', 'inside');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('MA4BF371H1LMWOCJ', 'most');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZGDI8EJIXNAIHAUG0V', 'window');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('EGDFF193GSKZX', 'memory');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('ZD2CRTD', 'reflect');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('UVVHVAESPAV8HXMX45', 'every');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('VBMSWQECXWSDL7J', 'through');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('FZ56D1Q7Q', 'card');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('77ATEV', 'list');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('LU89A', 'write');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('L8R0R2CPTTN2Z0SQ55BV', 'through');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2SW2XT1PPYX', 'learn');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('30OR6SWDE690', 'visit');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('M70ZQD6N2FJQ1OJA', 'election');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('AGCYAE21BNK19H', 'tell');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('UVVHVAESPAV8HXMX45', 'whatever');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('I0K5BF0XOU8RRWJS', 'explain');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('3HHJP2PO2PP', 'fall');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('D4PEN3PQOBHRL', 'herself');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('R0UDL5T0Q', 'allow');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('NB24TDA92', 'strategy');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('45E2D7MV4MJN0', 'power');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('7ZNIARN4KATYPLOR', 'stock');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('M95K5K9QZ', 'million');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('QIO1AG64EYG02PKZEF6', 'character');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('MT9WD29UG1D8JKZXYHBR', 'window');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('UYZQMXQED8H2TW', 'hand');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('M70ZQD6N2FJQ1OJA', 'which');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('LU89A', 'debate');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('LYBLSUB7S10666J6VJOCJ', 'allow');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('02C91G77F9S3T', 'card');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('UPT1C', 'along');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('O8KRDW60J3K0XRHDT6XDT', 'suggest');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('EHMPBT02NO4LGPA', 'card');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('1XSJFSKVS6C8', 'might');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('RAONEMJLR17H5', 'data');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('TS0AU', 'inside');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('XLVYCBFBC03JVAQG', 'tell');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('3C0DV9JO5RS5F', 'hand');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('MKO9QET3HY7P', 'learn');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('UUSH3D8PB8YBW6Z', 'fall');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('5FKZ5E1M87QESJ30Q', 'reflect');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('BVTXD071JBIUY', 'peace');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('QVA2UM9VYSWZ2VV', 'build');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('5PQJ744', 'including');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('EY9BOWO0ONREKII9SYIQG', 'apply');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('5QQQHCZ', 'fall');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2SW2XT1PPYX', 'suggest');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('X9QBYBID', 'ahead');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('SANR15W261T', 'light');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('MLERQAU3CZW9Y3C', 'explain');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('2228EKDSEF', 'hand');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('HFO63EMAFK5M4V0PD5V8', 'along');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('LFZV37F28', 'approach');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('YUJ72682YR6XBDTDSKH', 'character');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('YTT6USN5BCYA', 'learn');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('9DGZDOJSMHYA', 'probably');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('H8JDI', 'card');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('OOCLVBBZCZIG', 'apply');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('PRBQVB3CP8C', 'feeling');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('L14HL58UR82FUOI629TZJ', 'whatever');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('3TGKD7HO9EKV69R0UIP', 'herself');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('D31Z42Z', 'whatever');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('3XFYKT1MPFV4KS9AT900', 'write');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('7FN4G7FYOI18A2AQVD', 'which');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('RI5SPSRSS1R29UB', 'tell');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('D4U6ZK8KO3U9N', 'thing');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('CJ8GR5XGB9XNXCW4LKME', 'total');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('RI5SPSRSS1R29UB', 'several');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('5X84IINRW', 'office');
+INSERT INTO item_keyword (serial_no, keyword) VALUES ('FCU04Y3TF63OILE5RSL3', 'data');
 CREATE VIEW avg_item_rating AS
         SELECT
             item.serial_no,

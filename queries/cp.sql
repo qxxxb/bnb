@@ -65,7 +65,7 @@ SELECT store.name, AVG(rating)
 FROM store, store_review
 WHERE store.name = store_review.store_name
 GROUP BY store.name
-HAVING AVG(rating) > 2
+HAVING AVG(rating) > 2;
 
 /* (4.b) List items and prices of a user's wishlist */
 SELECT buyer.email, item.title, item.price
@@ -82,7 +82,7 @@ WHERE
     user.email = wishlist.email AND
     wishlist.serial_no = item.serial_no
 GROUP BY user.email
-ORDER BY SUM(item.price) ASC
+ORDER BY SUM(item.price) ASC;
 
 /* ## Question 5 */
 
@@ -186,7 +186,7 @@ WHERE
     email = store.seller_email AND
     store.name = item.store_name AND
     item.serial_no = order_contents.serial_no AND
-    order_contents.order_id = 'order'.id
+    order_contents.order_id = 'order'.id;
 
 /* (5.h) List sellers who listed items purchased by the buyers who spent above average */
 SELECT email
@@ -217,7 +217,7 @@ FROM seller, store, item, (
 WHERE
     special_serials = item.serial_no AND
     item.store_name = store.name AND
-    store.seller_email = seller.email
+    store.seller_email = seller.email;
 
 /* # CP 4 */
 

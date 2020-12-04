@@ -23,4 +23,3 @@ WHERE email = 'vgarcia@hodge.com';
 DELETE FROM buyer
 WHERE email = 'jenna75@gmail.com';
 /* Deleted buyer 'jenna75@gmail.com' */
-COMMIT

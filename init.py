@@ -1,5 +1,6 @@
 import sqlite3
 import os
+from pathlib import Path
 from faker import Faker
 import random
 import string
@@ -27,10 +28,9 @@ def init():
     conn.set_trace_callback(conn_trace)
 
     print('Creating database')
-    with open('create.sql', 'r') as f:
-        s = f.read()
-        c.executescript(s)
-        print('Created database')
+    s = open(Path('queries') / 'create.sql').read()
+    c.executescript(s)
+    print('Created database')
 
     print()
     print('Initializing database with data')
@@ -348,6 +348,8 @@ def init():
         WHERE item.serial_no = order_contents.serial_no
         GROUP BY order_contents.order_id
     """
+
+    print('Initialized database with data')
 
     c.execute(s)
 
