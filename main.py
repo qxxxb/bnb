@@ -8,10 +8,15 @@ db_name = 'a.db'
 conn = sqlite3.connect(db_name)
 c = conn.cursor()
 
+# TODO: CP 2
+
+print('# CP 3')
+print()
+
 # Q3
 # TODO: Update these queries
 print()
-print('# Question 3')
+print('## Question 3')
 print()
 
 print(
@@ -19,7 +24,7 @@ print(
     'than $10'
 )
 
-seller = "johndoe@gmail.com"
+seller = "bartonshelley@hotmail.com"
 s = """
 SELECT item.title
 FROM item, store, seller
@@ -38,7 +43,7 @@ print(
     '(3.b) Give all titles and their dates of purchase made by a given buyer'
 )
 
-buyer = "janedoe@gmail.com"
+buyer = "klinelinda@gallegos.org"
 s = """
 SELECT item.title, 'order'.timestamp
 FROM buyer, 'order', order_contents, item
@@ -54,7 +59,7 @@ pp.pprint(c.fetchall())
 print()
 
 print(
-    '(3.c) Find seller names with less than 5 items for sale'
+    '(3.c) Find seller names with less than 10 items for sale'
 )
 
 s = """
@@ -64,7 +69,7 @@ WHERE
     user.email = store.seller_email AND
     item.store_name = store.name
 GROUP BY user.email
-HAVING SUM(item.quantity) < 5;
+HAVING SUM(item.quantity) < 10;
 """
 
 c.execute(s)
@@ -76,7 +81,7 @@ print(
     'names of the items they purchased'
 )
 
-seller = "johndoe@gmail.com"
+seller = "lindsayspencer@wyatt.biz"
 s = """
 SELECT 'order'.buyer_email, item.title
 FROM seller, store, item, order_contents, 'order'
@@ -96,9 +101,9 @@ print(
     '(3.e) Find the total number of items purchased by a given buyer'
 )
 
-buyer = "janedoe@gmail.com"
+buyer = "klinelinda@gallegos.org"
 s = """
-SELECT SUM(order_contents.quantity)
+SELECT buyer.email, SUM(order_contents.quantity)
 FROM buyer, 'order', order_contents
 WHERE
     buyer.email = ? AND
@@ -115,7 +120,7 @@ print(
 )
 
 s = """
-SELECT email, MAX('SUM(order_contents.quantity)')
+SELECT email, MAX(`SUM(order_contents.quantity)`)
 FROM (
     SELECT buyer.email, SUM(order_contents.quantity)
     FROM buyer, 'order', order_contents
@@ -131,7 +136,7 @@ pp.pprint(c.fetchall())
 
 # Q4
 print()
-print('# Question 4')
+print('## Question 4')
 print()
 
 print('(4.a) List stores with an average rating above 2')
@@ -150,13 +155,13 @@ print()
 
 print('(4.b) List items and prices of a user\'s wishlist')
 
-buyer = 'chongsiriwatana.3@osu.edu'
+buyer = 'vgarcia@hodge.com'
 s = """
-SELECT item.title, item.price
-FROM user, wishlist, item
+SELECT buyer.email, item.title, item.price
+FROM buyer, wishlist, item
 WHERE
-    user.email = ? AND
-    user.email = wishlist.email AND
+    buyer.email = ? AND
+    buyer.email = wishlist.email AND
     wishlist.serial_no = item.serial_no;
 """
 
@@ -181,22 +186,21 @@ pp.pprint(c.fetchall())
 
 # Q5
 print()
-print('# Question 5')
+print('## Question 5')
 print()
 
 print('(5.a) List of buyer names with total dollar amount spent')
 
 s = """
 SELECT
-    user.email,
+    buyer.email,
     ROUND(SUM(item.price) * order_contents.quantity / 100.0, 2)
-FROM user, buyer, 'order', order_contents, item
+FROM buyer, 'order', order_contents, item
 WHERE
-    user.email = buyer.email AND
     buyer.email = 'order'.buyer_email AND
     'order'.id = order_contents.order_id AND
     order_contents.serial_no = item.serial_no
-GROUP BY user.email;
+GROUP BY buyer.email;
 """
 
 c.execute(s)
@@ -212,26 +216,25 @@ s = """
 SELECT
     user.first_name,
     user.last_name,
-    user.email
-FROM user, buyer, 'order', order_contents, item
+    buyer.email
+FROM buyer, 'order', order_contents, item, user
 WHERE
-    user.email = buyer.email AND
     buyer.email = 'order'.buyer_email AND
     'order'.id = order_contents.order_id AND
-    order_contents.serial_no = item.serial_no
+    order_contents.serial_no = item.serial_no AND
+    user.email = buyer.email
 GROUP BY user.email
 HAVING SUM(item.price) * order_contents.quantity > (
     SELECT AVG(spent) FROM (
         SELECT
-            user.email,
+            buyer.email,
             SUM(item.price) * order_contents.quantity as spent
-        FROM user, buyer, 'order', order_contents, item
+        FROM buyer, 'order', order_contents, item
         WHERE
-            user.email = buyer.email AND
             buyer.email = 'order'.buyer_email AND
             'order'.id = order_contents.order_id AND
             order_contents.serial_no = item.serial_no
-        GROUP BY user.email
+        GROUP BY buyer.email
     )
 );
 """
@@ -359,34 +362,34 @@ print(
 
 s = """
 SELECT email
-FROM seller, store, item
-WHERE
-    seller.email = store.seller_email AND
-    store.name = item.store_name AND
-    item.serial_no = (
-        SELECT item.serial_no
-        FROM user, buyer, 'order', order_contents, item
-        WHERE
-            user.email = buyer.email AND
-            buyer.email = 'order'.buyer_email AND
-            'order'.id = order_contents.order_id AND
-            order_contents.serial_no = item.serial_no
-        GROUP BY user.email
-        HAVING SUM(item.price) * order_contents.quantity > (
-            SELECT AVG(spent) FROM (
-                SELECT
-                    user.email,
-                    SUM(item.price) * order_contents.quantity as spent
-                FROM user, buyer, 'order', order_contents, item
-                WHERE
-                    user.email = buyer.email AND
-                    buyer.email = 'order'.buyer_email AND
-                    'order'.id = order_contents.order_id AND
-                    order_contents.serial_no = item.serial_no
-                GROUP BY user.email
-            )
+FROM seller, store, item, (
+    SELECT item.serial_no as special_serials
+    FROM user, buyer, 'order', order_contents, item
+    WHERE
+        user.email = buyer.email AND
+        buyer.email = 'order'.buyer_email AND
+        'order'.id = order_contents.order_id AND
+        order_contents.serial_no = item.serial_no
+    GROUP BY user.email
+    HAVING SUM(item.price) * order_contents.quantity > (
+        SELECT AVG(spent) FROM (
+            SELECT
+                user.email,
+                SUM(item.price) * order_contents.quantity as spent
+            FROM user, buyer, 'order', order_contents, item
+            WHERE
+                user.email = buyer.email AND
+                buyer.email = 'order'.buyer_email AND
+                'order'.id = order_contents.order_id AND
+                order_contents.serial_no = item.serial_no
+            GROUP BY user.email
         )
     )
+)
+WHERE
+    special_serials = item.serial_no AND
+    item.store_name = store.name AND
+    store.seller_email = seller.email
 """
 
 c.execute(s)

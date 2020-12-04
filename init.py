@@ -121,13 +121,14 @@ s = """
 INSERT INTO item (
     serial_no,
     quantity,
+    quantity_sold,
     title,
     description,
     category,
     file_type,
     price,
     store_name
-) VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
 """
 
 items = [()] * 400
@@ -138,7 +139,8 @@ for i, _ in enumerate(items):
         random.choices(string.ascii_uppercase + string.digits, k=serial_no_len)
     )
 
-    quantity = random.randint(1, 500 + 1)
+    quantity = random.randint(1, 50 + 1)
+    quantity_sold = random.randint(1, 50 + 1)
     title = fake.bs()
     description = fake.sentence()
 
@@ -149,13 +151,13 @@ for i, _ in enumerate(items):
     category = random.choice(categories)
     file_type = fake.file_extension()
 
-    price = random.randint(1, 1000000 + 1)
+    price = random.randint(1, 10000 + 1)
 
     store = random.choice(stores)
     store_name = store[0]
 
     item = (
-        serial_no, quantity, title, description, category,
+        serial_no, quantity, quantity_sold, title, description, category,
         file_type, price, store_name
     )
 
