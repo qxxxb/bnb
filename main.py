@@ -1,5 +1,8 @@
 import sqlite3
 import pprint
+import init
+
+init.init()
 
 pp = pprint.PrettyPrinter(indent=4)
 
@@ -8,14 +11,9 @@ db_name = 'a.db'
 conn = sqlite3.connect(db_name)
 c = conn.cursor()
 
-# TODO: CP 2
-
 print('# CP 3')
 print()
 
-# Q3
-# TODO: Update these queries
-print()
 print('## Question 3')
 print()
 
@@ -134,7 +132,6 @@ FROM (
 c.execute(s)
 pp.pprint(c.fetchall())
 
-# Q4
 print()
 print('## Question 4')
 print()
@@ -393,4 +390,129 @@ WHERE
 """
 
 c.execute(s)
+pp.pprint(c.fetchall())
+print()
+
+print('# CP 4')
+print()
+
+print('## Question 5')
+print()
+
+# See `init.py` for SQL code used to create views
+
+print(
+    '(5.a) We created a view that lists all items along with their average '
+    'rating.'
+)
+
+s = """
+SELECT * FROM avg_item_rating;
+"""
+
+c.execute(s)
+pp.pprint(c.fetchall())
+print()
+
+print(
+    '(5.b) We created a view that lists all orders along with their total '
+    'price of items purchased'
+)
+
+s = """
+SELECT * FROM order_price;
+"""
+
+c.execute(s)
+pp.pprint(c.fetchall())
+print()
+
+print('## Question 7')
+print()
+
+print(
+    '(7.a) Sample transaction for placing an order'
+)
+
+order_id = 301
+
+s = """
+BEGIN TRANSACTION;
+    INSERT OR ROLLBACK INTO 'order' (
+        id,
+        buyer_email,
+        delivery_email,
+        card_no
+    ) VALUES (
+        {order_id},
+        '{buyer_email}',
+        '{delivery_email}',
+        '{card_no}'
+    );
+
+    INSERT OR ROLLBACK INTO order_contents (
+        order_id,
+        serial_no,
+        quantity
+    ) VALUES (
+        {order_id},
+        '{serial_no}',
+        {quantity}
+    );
+
+    UPDATE or ROLLBACK item
+    SET
+        quantity = quantity - {quantity},
+        quantity_sold = quantity_sold + {quantity}
+    WHERE serial_no = '{serial_no}';
+END TRANSACTION;
+""".format(
+    order_id=order_id,
+    buyer_email='klinelinda@gallegos.org',
+    delivery_email='johndoe@gmail.com',
+    card_no='4645029277102275',
+    serial_no='XMMDEQZECUBMWVS8',
+    quantity=2
+)
+
+c.executescript(s)
+
+s = """
+SELECT id, buyer_email, delivery_email, timestamp
+FROM 'order'
+WHERE id = ?;
+"""
+
+c.execute(s, (order_id,))
+pp.pprint(c.fetchall())
+print()
+
+print(
+    '(7.b) Sample transaction for creating a store'
+)
+
+seller = 'hsolomon@cobb.com'
+
+s = """
+BEGIN TRANSACTION;
+    INSERT OR IGNORE INTO seller (email)
+    VALUES ('{seller}');
+
+    INSERT OR ROLLBACK INTO store (name, seller_email)
+    VALUES ('{store_name}', '{seller}');
+END TRANSACTION;
+""".format(
+    seller=seller,
+    store_name='Costco Hotdogs'
+)
+
+c.executescript(s)
+
+s = """
+SELECT seller_email, name
+FROM store
+WHERE store.seller_email = ?;
+"""
+
+c.execute(s, (seller,))
 pp.pprint(c.fetchall())

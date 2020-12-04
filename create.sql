@@ -39,7 +39,7 @@ CREATE TABLE 'order' (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     buyer_email VARCHAR(20) NOT NULL,
     delivery_email VARCHAR(20) NOT NULL,
-    timestamp TIMESTAMP NOT NULL,
+    timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     card_no VARCHAR(20) NOT NULL,
     FOREIGN KEY(buyer_email) REFERENCES buyer(email),
     FOREIGN KEY(card_no) REFERENCES card(card_no)
