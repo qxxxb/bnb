@@ -1,6 +1,12 @@
 import sqlite3
 import pprint
+import string
+from faker import Faker
+import random
 import init
+
+Faker.seed(4321)
+random.seed(4321)
 
 init.init()
 
@@ -11,13 +17,30 @@ db_name = 'a.db'
 conn = sqlite3.connect(db_name)
 c = conn.cursor()
 
-print('# CP 3')
-print()
+sql_log = open('main_log.sql', 'w')
 
-print('## Question 3')
-print()
 
-print(
+def conn_trace(s):
+    sql_log.write(s.strip() + '\n')
+
+
+def log(s=''):
+    print(s)
+    if s == '':
+        sql_log.write('\n')
+    else:
+        sql_log.write('/* ' + s + ' */\n')
+
+
+conn.set_trace_callback(conn_trace)
+
+log('# CP 3')
+log()
+
+log('## Question 3')
+log()
+
+log(
     '(3.a) Find the titles of all items by a given seller that cost less '
     'than $10'
 )
@@ -35,9 +58,9 @@ WHERE
 
 c.execute(s, (seller,))
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(3.b) Give all titles and their dates of purchase made by a given buyer'
 )
 
@@ -54,9 +77,9 @@ WHERE
 
 c.execute(s, (buyer,))
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(3.c) Find seller names with less than 10 items for sale'
 )
 
@@ -72,9 +95,9 @@ HAVING SUM(item.quantity) < 10;
 
 c.execute(s)
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(3.d) Give all buyers who purchased an item by a given seller and the '
     'names of the items they purchased'
 )
@@ -93,9 +116,9 @@ WHERE
 
 c.execute(s, (seller,))
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(3.e) Find the total number of items purchased by a given buyer'
 )
 
@@ -111,9 +134,9 @@ WHERE
 
 c.execute(s, (buyer,))
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(3.f) Find the buyer who purchased the most number of items'
 )
 
@@ -132,11 +155,11 @@ FROM (
 c.execute(s)
 pp.pprint(c.fetchall())
 
-print()
-print('## Question 4')
-print()
+log()
+log('## Question 4')
+log()
 
-print('(4.a) List stores with an average rating above 2')
+log('(4.a) List stores with an average rating above 2')
 
 s = """
 SELECT store.name, AVG(rating)
@@ -148,9 +171,9 @@ HAVING AVG(rating) > 2
 
 c.execute(s)
 pp.pprint(c.fetchall())
-print()
+log()
 
-print('(4.b) List items and prices of a user\'s wishlist')
+log('(4.b) List items and prices of a user\'s wishlist')
 
 buyer = 'vgarcia@hodge.com'
 s = """
@@ -164,9 +187,9 @@ WHERE
 
 c.execute(s, (buyer, ))
 pp.pprint(c.fetchall())
-print()
+log()
 
-print('(4.c) Get the sum of item prices on all wishlists, ordered by price')
+log('(4.c) Get the sum of item prices on all wishlists, ordered by price')
 
 s = """
 SELECT user.email, SUM(item.price)
@@ -182,11 +205,11 @@ c.execute(s)
 pp.pprint(c.fetchall())
 
 # Q5
-print()
-print('## Question 5')
-print()
+log()
+log('## Question 5')
+log()
 
-print('(5.a) List of buyer names with total dollar amount spent')
+log('(5.a) List of buyer names with total dollar amount spent')
 
 s = """
 SELECT
@@ -202,9 +225,9 @@ GROUP BY buyer.email;
 
 c.execute(s)
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(5.b) List buyers names and emails who have spent more than the '
     'average buyer'
 )
@@ -238,9 +261,9 @@ HAVING SUM(item.price) * order_contents.quantity > (
 
 c.execute(s)
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(5.c) List all item names and their total copies sold, sorted from '
     'most copies sold to least'
 )
@@ -255,9 +278,9 @@ ORDER BY SUM(quantity_sold) DESC;
 
 c.execute(s)
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(5.d) Provide a list of item names and associated dollar totals for '
     'copies sold to all buyers, sorted from highest dollar amount to lowest'
 )
@@ -275,9 +298,9 @@ ORDER BY accum_price DESC;
 
 c.execute(s)
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(5.e) Find the seller who sold the most items'
 )
 
@@ -295,9 +318,9 @@ SELECT email, MAX(total_quantity_sold) FROM (
 
 c.execute(s)
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(5.f) Find the most profitable seller'
 )
 
@@ -316,9 +339,9 @@ FROM (
 
 c.execute(s)
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(5.g) List buyer names who have purchased from the most profitable seller'
 )
 
@@ -350,9 +373,9 @@ WHERE
 
 c.execute(s)
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(5.h) List sellers who listed items purchased by the buyers who spent '
     'above average'
 )
@@ -391,17 +414,17 @@ WHERE
 
 c.execute(s)
 pp.pprint(c.fetchall())
-print()
+log()
 
-print('# CP 4')
-print()
+log('# CP 4')
+log()
 
-print('## Question 5')
-print()
+log('## Question 5')
+log()
 
 # See `init.py` for SQL code used to create views
 
-print(
+log(
     '(5.a) We created a view that lists all items along with their average '
     'rating.'
 )
@@ -412,9 +435,9 @@ SELECT * FROM avg_item_rating;
 
 c.execute(s)
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(5.b) We created a view that lists all orders along with their total '
     'price of items purchased'
 )
@@ -425,12 +448,12 @@ SELECT * FROM order_price;
 
 c.execute(s)
 pp.pprint(c.fetchall())
-print()
+log()
 
-print('## Question 7')
-print()
+log('## Question 7')
+log()
 
-print(
+log(
     '(7.a) Sample transaction for placing an order'
 )
 
@@ -456,23 +479,42 @@ BEGIN TRANSACTION;
         quantity
     ) VALUES (
         {order_id},
-        '{serial_no}',
-        {quantity}
+        '{serial_no1}',
+        {quantity1}
     );
 
     UPDATE or ROLLBACK item
     SET
-        quantity = quantity - {quantity},
-        quantity_sold = quantity_sold + {quantity}
-    WHERE serial_no = '{serial_no}';
+        quantity = quantity - {quantity1},
+        quantity_sold = quantity_sold + {quantity1}
+    WHERE serial_no = '{serial_no1}';
+
+    INSERT OR ROLLBACK INTO order_contents (
+        order_id,
+        serial_no,
+        quantity
+    ) VALUES (
+        {order_id},
+        '{serial_no2}',
+        {quantity2}
+    );
+
+    UPDATE or ROLLBACK item
+    SET
+        quantity = quantity - {quantity2},
+        quantity_sold = quantity_sold + {quantity2}
+    WHERE serial_no = '{serial_no2}';
+
 END TRANSACTION;
 """.format(
     order_id=order_id,
     buyer_email='klinelinda@gallegos.org',
     delivery_email='johndoe@gmail.com',
     card_no='4645029277102275',
-    serial_no='XMMDEQZECUBMWVS8',
-    quantity=2
+    serial_no1='XMMDEQZECUBMWVS8',
+    quantity1=2,
+    serial_no2='GF4IPWZXNXZNUJM',
+    quantity2=5
 )
 
 c.executescript(s)
@@ -485,9 +527,9 @@ WHERE id = ?;
 
 c.execute(s, (order_id,))
 pp.pprint(c.fetchall())
-print()
+log()
 
-print(
+log(
     '(7.b) Sample transaction for creating a store'
 )
 
@@ -516,3 +558,197 @@ WHERE store.seller_email = ?;
 
 c.execute(s, (seller,))
 pp.pprint(c.fetchall())
+log()
+
+log('# Final document')
+log()
+
+fake = Faker()
+
+log('## Inserting records')
+log()
+
+log('### Inserting items')
+log()
+
+s = """
+INSERT INTO item (
+    serial_no,
+    quantity,
+    quantity_sold,
+    title,
+    description,
+    category,
+    file_type,
+    price,
+    store_name
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
+"""
+
+serial_no_len = random.randint(5, 20 + 1)
+serial_no = ''.join(
+    random.choices(
+        string.ascii_uppercase + string.digits,
+        k=serial_no_len
+    )
+)
+
+quantity = random.randint(1, 50 + 1)
+quantity_sold = random.randint(1, 50 + 1)
+title = fake.bs()
+description = fake.sentence()
+
+categories = [
+    'art', 'tools', 'images', 'documents', 'code',
+    'books', 'music', 'games', 'misc'
+]
+category = random.choice(categories)
+file_type = fake.file_extension()
+
+price = random.randint(1, 10000 + 1)
+
+store_name = 'Ross PLC'
+
+item = (
+    serial_no, quantity, quantity_sold, title, description, category,
+    file_type, price, store_name
+)
+
+c.execute(s, item)
+log(
+    "Inserted new item '{}' with serial number '{}' in store '{}'".format(
+        title,
+        serial_no,
+        store_name
+    )
+)
+log()
+
+log('### Inserting orders')
+log()
+
+log('See CP4 quesiton 7.a')
+log()
+
+log('### Inserting sellers')
+log()
+
+s = """
+INSERT INTO user (email, first_name, last_name, has_photo, karma_points)
+VALUES (?, ?, ?, ?, ?);
+"""
+
+user = (
+    fake.email(), fake.first_name(), fake.last_name(),
+    fake.boolean(), fake.pyint()
+)
+
+c.execute(s, user)
+log(
+    "Inserted user '{} {}' with email '{}'".format(
+        user[1], user[2], user[0]
+    )
+)
+
+s = """
+INSERT INTO seller (email)
+VALUES (?);
+"""
+
+seller = user[0]
+c.execute(s, (seller,))
+log("Inserted seller '{}'".format(seller))
+log()
+
+log('### Inserting buyers')
+log()
+
+s = """
+INSERT INTO user (email, first_name, last_name, has_photo, karma_points)
+VALUES (?, ?, ?, ?, ?);
+"""
+
+user = (
+    fake.email(), fake.first_name(), fake.last_name(),
+    fake.boolean(), fake.pyint()
+)
+
+c.execute(s, user)
+log(
+    "Inserted user '{} {}' with email '{}'".format(
+        user[1], user[2], user[0]
+    )
+)
+
+s = """
+INSERT INTO buyer (email)
+VALUES (?);
+"""
+
+buyer = user[0]
+c.execute(s, (buyer,))
+log("Inserted buyer '{}'".format(buyer))
+log()
+
+log('## Deleting records')
+log()
+
+log('### Deleting items')
+log()
+
+s = """
+DELETE FROM item
+WHERE serial_no = ?;
+"""
+
+serial_no = '13QF5RTP'
+
+c.execute(s, (serial_no,))
+log("Deleted item '{}'".format(serial_no))
+log()
+
+log('### Deleting orders')
+log()
+
+s = """
+DELETE FROM 'order'
+WHERE id = ?;
+"""
+
+order_id = 5
+
+c.execute(s, (order_id,))
+log("Deleted order '{}'".format(order_id))
+log()
+
+log('### Deleting sellers')
+log()
+
+s = """
+DELETE FROM seller
+WHERE email = ?;
+"""
+
+seller = 'vgarcia@hodge.com'
+
+c.execute(s, (seller,))
+log("Deleted seller '{}'".format(seller))
+log()
+
+log('### Deleting buyers')
+log()
+
+s = """
+DELETE FROM buyer
+WHERE email = ?;
+"""
+
+buyer = 'jenna75@gmail.com'
+
+c.execute(s, (buyer,))
+log("Deleted buyer '{}'".format(buyer))
+
+conn.commit()
+conn.close()
+
+sql_log.close()

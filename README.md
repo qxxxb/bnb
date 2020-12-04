@@ -1,5 +1,8 @@
 # CSE 3241 Project
 
+## TODO
+- [ ] Getting a foreign key constraint value in [init.sql](queries/init.sql)
+
 ## Dependencies
 
 - Install Python 3

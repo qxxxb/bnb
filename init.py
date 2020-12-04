@@ -19,6 +19,13 @@ def init():
     conn = sqlite3.connect(db_name)
     c = conn.cursor()
 
+    sql_log = open('init_log.sql', 'w')
+
+    def conn_trace(s):
+        sql_log.write(s.strip() + '\n')
+
+    conn.set_trace_callback(conn_trace)
+
     print('Creating database')
     with open('create.sql', 'r') as f:
         s = f.read()
@@ -346,6 +353,8 @@ def init():
 
     conn.commit()
     conn.close()
+
+    sql_log.close()
 
 
 if __name__ == "__main__":
